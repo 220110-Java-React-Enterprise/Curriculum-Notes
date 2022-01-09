@@ -14,6 +14,9 @@ When it comes to QC code challenges, **do not collaborate or copy/paste at all**
 # Unstructured/Project Time
 Most days I will stop lecturing in the afternoon and give you unstructured time to work on labs, study, assignments, projects, etc. I have other responsibilities as well as meetings to attend, so whenever I am not available during our business day, you will be expected to use this unstructured time wisely and productively.
 
+# Self Study Topics
+Sometimes we just won't get the time to cover all the lecture material. From time to time I may assign some topics as self study. This doesn't mean these topics are less important or can be ignored. Everything on our curriculum is important and may very likely come up in QC or panels. I will provide you with any notes or content I have.
+
 # QC
 QCs are a series of informal assessments conducted by trainers and the QC department. Every week, starting in week 2, we will have a QC of one form or another. These are most likely to be verbal assessments about topics from the previous week, though you may be asked about any and all topics covered up to that point. There are also code challenges. Take these QCs very seriously, but don't stress yourself overmuch. They are important, but they are not the only way your progress will be measured. There will be a QC orientation where you will learn more.
   
@@ -29,3 +32,11 @@ Assignments, unlike labs, **are required**. I expect these to be turned in (push
 There will be a total of 4 projects you will all work on. We will start with Project 0, or P0, in week 1. P1, P2, and P3 will all be group projects. I will provide a document with very explicit requirements for P0-P2, and the CoE team will provide detailed requirements for the capstone project, P3.
   
 Each project will be acompanied by a showcase, where everyone shows off their work. P3 will be a big presentation involving everyone, and there may be hundreds of attendees from Revature and beyond to see your work.
+
+# Panels
+Some time after week 8 you will be required to take "panels". Named for the style of the exam, a panel of experts would ask you technical and interview questions to test your knowlege and readiness for real interviews. Recently the panels have taken a new form, an online assessment. This represents the final exam, you'll learn more as the time approaches. 
+
+# 1-on-1's
+During unstructured time I will frequently be conducting 1-on-1 meetings with you and your peers. If you don't hear from me about setting up such a meeting, do not worry. These meetings are often used to discuss your individual progress, and if I don't reach out to you it just means I don't feel the need to discuss it (as in: you're doing great and I just don't have the time to tell you that). If for any reason you would like to discuss anything at all with me in a private setting, please feel free to reach out and we will schedule a 1-on-1. These can be time consuming, but I will make every effort to conduct any and all private meetings in a timely manner. It may mean we have to have our 1-on-1 during lunch or a break, but rest assured I'll give you the opportunity to make up that lost break time.
+
+
