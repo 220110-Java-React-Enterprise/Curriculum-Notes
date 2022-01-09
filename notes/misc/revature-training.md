@@ -58,4 +58,4 @@ We will be conducting our training in Zoom. Everyone needs a webcam and micropho
  - You will be required to have your camera on during presentations, QCs, panels, and interviews.
  
 # Bullying
-Don't do it. I expect everyone to be totally professional at all times. I have a zero tollerance policy for bullying and other unprofessional behavior. Please do not make me take action about unprofessionalism. You may not be best friends with everyone you work with, but you should be polite, courteous, and professional with everyone. If you are curious what constitutes unprofessional behavior or bullying, ask.
+Don't do it. I expect everyone to be totally professional at all times. I have a zero tollerance policy for bullying and other unprofessional behavior. Please do not make me take action about unprofessionalism. You may not be best friends with everyone you work with, but you should be polite, courteous, and professional with everyone. If you are curious what constitutes unprofessional behavior or bullying, ask. Keep in mind, the other associates are your co-workers, and I am your supervisor. You represent Revature. Act accordingly.
