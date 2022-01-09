@@ -39,4 +39,23 @@ Some time after week 8 you will be required to take "panels". Named for the styl
 # 1-on-1's
 During unstructured time I will frequently be conducting 1-on-1 meetings with you and your peers. If you don't hear from me about setting up such a meeting, do not worry. These meetings are often used to discuss your individual progress, and if I don't reach out to you it just means I don't feel the need to discuss it (as in: you're doing great and I just don't have the time to tell you that). If for any reason you would like to discuss anything at all with me in a private setting, please feel free to reach out and we will schedule a 1-on-1. These can be time consuming, but I will make every effort to conduct any and all private meetings in a timely manner. It may mean we have to have our 1-on-1 during lunch or a break, but rest assured I'll give you the opportunity to make up that lost break time.
 
+# Dress code
+### Note: Dress code applies even if we are remote, and even if you don't expect to turn your camera on. You are required to abide by the dress code every day.
+Our normal dress code is business casual. For the guys I can say this means a button up shirt or polo without graphics or text, tucked into long non-denim pants. For ladies, I have no clue, but if you need assistance with figuring out business casual I can put you in contact with a trainer more familiar with ladies' wardrobe options.
+  
+Sometimes we will dress up in business professional. This is the attire you should be wearing to interviews. Business professional will be required for showcases, panels, and interviews. We also expect you to wear business professional attire on your first days of client project until you have had the chance to see the expected dress code of the office. For the first few weeks of training I will ask you to wear business professional on Mondays. For men, business professional is casual + tie and jacket. Ladies, again I am not familiar enough with your options.
+  
+Sometimes we might have a "dress down" or casual day. For guys this means you can untuck those shirts and even wear jeans. Ladies, you get the drill by now. If you have any questions I can get in touch with someone to answer them. Profane or explicit text, graphics, or designs are never approporiate. Extremely suggestive or revealing clothing is also never approporiate.
 
+# Zoom Ettiquite
+We will be conducting our training in Zoom. Everyone needs a webcam and microphone of sufficent quality, this is an absolute requirement. 
+ - You should be ready to turn on your camera at any time if I ask. 
+ - I expect everyone to have their cameras on for at least a little bit daily, but I won't ask you to be on camera all day.
+ - I don't always see all of the zoom chat, if you need something click "raise hand".
+ - Everyone's mic should be muted at all times while they are not speaking. I will be muting you if you are making noise. If it becomes a problem we will have to have words.
+ - Use the "raise hand" button to get my attention. Please avoid inturrupting by unmuting and speaking. I will pause and call on raised hands as soon as possible.
+ - Please do not hesitate to raise your hand and ask me about anything at all. Don't be intimidated by these bulletpoints, I want to hear from you!
+ - You will be required to have your camera on during presentations, QCs, panels, and interviews.
+ 
+# Bullying
+Don't do it. I expect everyone to be totally professional at all times. I have a zero tollerance policy for bullying and other unprofessional behavior. Please do not make me take action about unprofessionalism. You may not be best friends with everyone you work with, but you should be polite, courteous, and professional with everyone. If you are curious what constitutes unprofessional behavior or bullying, ask.
