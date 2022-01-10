@@ -1,7 +1,7 @@
 # Notes
 
 ## Week 1:
- - Intro to Git
+ - [Git & GitHub Basics](./notes/misc/intro-git.md)
  - Linux/Unix
  - OOP
  - Java
