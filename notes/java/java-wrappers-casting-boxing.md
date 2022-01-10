@@ -3,16 +3,16 @@
 ## Wrapper Classes
 Wrapper classes are classes that let you treat primitives as Objects. This is necessary - for example - for certain methods which only accept objects and not primitives. **Boxing** is the process of converting a primitive to its wrapper class. Java has a feature called **autoboxing** which will automatically convert primitives to wrapper classes implicitly. **Unboxing** is the reverse - converting a wrapper class to its primitive. Below the wrapper classes are listed:
 
-| Primitive | Wrapper Class |
-| --------- | ------------- |
-| boolean   | Boolean       |
-| byte      | Byte          |
-| short     | Short         |
-| char      | Character     |
-| int       | Integer       |
-| long      | Long          |
-| float     | Float         |
-| double    | Double        |
+| Primitive | Wrapper Class | Size | Description |
+| --------- | ------------- | ------- | ----------- |
+| boolean   | Boolean       | N/A     | True/False. Size unspecified, depends on JVM |
+| byte      | Byte          | 8 bits  | numerical, integer value |
+| short     | Short         | 16 bits | signed numerical, integer value |
+| char      | Character     | 16 bits | unsigned numerical, Unicode character |
+| int       | Integer       | 32 bits | numerical, integer value |
+| long      | Long          | 64 bits | numerical, integer value |
+| float     | Float         | 32 bits | floating point value |
+| double    | Double        | 64 bits | floating point value |
 
 Wrapper classes have static helper methods like `.parseX()` and `.valueOf()` for explicit primitive conversion.
 
