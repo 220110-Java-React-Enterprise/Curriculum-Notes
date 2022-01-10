@@ -5,3 +5,4 @@ Welcome to Revature! Over the course of this curriculum we will prepare you to b
  - [Notes](./notes/README.md)
  - [Roadmap](./roadmap.md)
  - [Environment](./environment.md)
+ - [Revature Training & Curriculum](./notes/misc/revature-training.md)
