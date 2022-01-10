@@ -8,7 +8,7 @@ GitHub and GitLab, not to be confused with Git itself, are online services that 
 
 
 
-<div align="center"> <img src="./../../images/distributed-git.png" width="500"/></div>
+<div align="center"> <img src="./../images/distributed-git.png" width="500"/></div>
 
 ## What is GitHub?
 
@@ -55,7 +55,7 @@ $ touch app.js
 7. To begin tracking this code with Git, we initialize a local repository by running the command `git init`.
 8. If you run the `ls-la` command again, you'll notice that a `.git` directory has been added to our project. 
 
-<div align="center"> <img src="./../../images/git-bash-1.png" width="500"/> </div>
+<div align="center"> <img src="./../images/git-bash-1.png" width="500"/> </div>
 
 The `.git` folder contains all the information that is necessary for your project in version control and all the information about commits, remote repository address, etc.
 
@@ -90,11 +90,11 @@ console.log('Hello!')
 ### Tracking Files with `git status`
 If we Git Bash within our `MyApp` directory once more and run the command `git status`, we can see that we have several untracked files which will be listed in <span style="color: red;">red</span>. 
 
-<div align="center"> <img src="./../../images/git-bash-2.png" width="500"/> </div>
+<div align="center"> <img src="./../images/git-bash-2.png" width="500"/> </div>
 
 ### Working Directory, Staging Area, Repository
 
-<div align="center"> <img src="./../../images/bash-4.png" width="500"/> </div
+<div align="center"> <img src="./../images/bash-4.png" width="500"/> </div
 
 * Untracked and modified files will exisit within the **Working Directory**. The files in the **Working Directory** are listed when we run `git status`.
 
@@ -120,15 +120,15 @@ So far we have initialized a local repository to track changes made to our sourc
 
 2. In the top right hand corner, under the `+` button, click `New Repository`.
 
-  <div align="center"> <img src="./../../../../images/new-repo.png" width="200"/> </div>
+  <div align="center"> <img src="./../images/new-repo.png" width="200"/> </div>
 
 3. Title your repository.  Do not initialize it with a README. Click `Create repository`.
 
-<div align="center"> <img src="./../../images/new-repo-2.png" width="700"/> </div>
+<div align="center"> <img src="./../images/new-repo-2.png" width="700"/> </div>
 
 4. Since we will be pushing the existing local repository from the command line using the `git remote add origin` command, click the clipboard icon next to the third option, as highlighted below.
 
-<div align="center"> <img src="./../../images/new-repo-3.png" width="800"/> </div>
+<div align="center"> <img src="./../images/new-repo-3.png" width="800"/> </div>
 
 5. Git Bash within your `MyApp` folder and paste the copied commands:
 
