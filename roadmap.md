@@ -16,9 +16,9 @@
 #### Another Note: Interviews for client projects will likely begin during weeks 8-10, but may even begin earlier.
 
 # Client Mapping
-Often when a training program starts there is a particular client in mind. This client usually sets some expectations and the curriculum. They also usually desire a specific number of new employees. This means that most likely this will be the first client you and your peers interview with. During this time they get "first dibs", you probably won't be interviewing with anyone else until they have made a decision. This can sometimes take up to 2 weeks.
+Often when a training program starts there is a particular client in mind. This client usually sets some expectations and the curriculum. They also usually desire a specific number of associates. This means that most likely this will be the first client you and your peers interview with. During this time they get "first dibs", you probably won't be interviewing with anyone else until they have made a decision. This can sometimes take up to 2 weeks.
   
-Your client mapping will remain super-top-secret for now, I'll tell you who it is at the end of the week. For now I feel comfortable saying that if you were to be assigned to this client and remote work were to cease, you will be expected to relocate to Arkansas.
+Your client mapping will remain super-mega-ultimate-top-secret for now, I'll tell you who it is at the end of the week. For now I feel comfortable saying that if you were to be assigned to this client and remote work were to cease, you will be expected to relocate to Arkansas.
   
 This client is looking for 15 people from this group, and in my opinion is one of the better clients you could be assigned to.
   
