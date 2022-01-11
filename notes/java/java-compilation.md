@@ -31,30 +31,34 @@ The main class is loaded into the memory bypassing its ‘.class’ file to the 
 A class loader, itself an object, creates a flat namespace of class bodies that are referenced by a string name. The method definition is provided below illustration as follows:
 
 Illustration:
-
+```java
 // loadClass function prototype
 
 Class r = loadClass(String className, boolean resolveIt);
 
 // className: name of the class to be loaded
 // resolveIt: flag to decide whether any referenced class should be loaded or not.
+```
+
 There are two types of class loaders
 
-primordial
-non-primordial
+ - primordial
+ - non-primordial
 The primordial class loader is embedded into all the JVMs and is the default class loader. A non-primordial class loader is a user-defined class loader, which can be coded in order to customize the class-loading process. Non-primordial class loader, if defined, is preferred over the default one, to load classes. 
 
-Stage 2: Bytecode Verifier
+### Stage 2: Bytecode Verifier
 
 After the bytecode of a class is loaded by the class loader, it has to be inspected by the bytecode verifier, whose job is to check that the instructions don’t perform damaging actions. The following are some of the checks carried out: 
 
-Variables are initialized before they are used.
-Method calls match the types of object references.
-Rules for accessing private data and methods are not violated.
-Local variable accesses fall within the runtime stack.
-The run-time stack does not overflow.
-If any of the above checks fail, the verifier doesn’t allow the class to be loaded.
-Stage 3: Just-In-Time Compiler
+ - Variables are initialized before they are used.
+ - Method calls match the types of object references.
+ - Rules for accessing private data and methods are not violated.
+ - Local variable accesses fall within the runtime stack.
+ - The run-time stack does not overflow.
+ - If any of the above checks fail, the verifier doesn’t allow the class to be loaded.
+
+
+### Stage 3: Just-In-Time Compiler
 
 This is the final stage encountered by the java program, and its job is to convert the loaded bytecode into machine code. When using a JIT compiler, the hardware can execute the native code, as opposed to having the JVM interpret the same sequence of bytecode repeatedly and incurring the penalty of a relatively lengthy translation process. This can lead to performance gains in the execution speed unless methods are executed less frequently.
 
