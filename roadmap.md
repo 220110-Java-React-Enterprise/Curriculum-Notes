@@ -29,3 +29,6 @@ This client is primarily focused on the following technologies:
  - JS/TS
  - React & Redux
  - SQL
+
+
+The client has request you learn a bit about Azure. That's not part of this curriculum, there will be an Azure primer when you get to staging.
