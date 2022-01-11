@@ -57,3 +57,5 @@ If any of the above checks fail, the verifier doesn’t allow the class to be lo
 Stage 3: Just-In-Time Compiler
 
 This is the final stage encountered by the java program, and its job is to convert the loaded bytecode into machine code. When using a JIT compiler, the hardware can execute the native code, as opposed to having the JVM interpret the same sequence of bytecode repeatedly and incurring the penalty of a relatively lengthy translation process. This can lead to performance gains in the execution speed unless methods are executed less frequently.
+
+![Java compilation and Class Loading](./../images/java-compilation.jpg)
