@@ -11,7 +11,7 @@
 
 ## Java Control Flow
  - [Conditional Blocks - If-Else](./variant-conditional-blocks/variant-conditional-blocks.md)
- - [For Loops](/for-loop/for-loop.md)
+ - [For Loops](./for-loop/for-loop.md)
  - [While Loops](./while-loop/while-loop.md)
  - [Do-While loops](./do-while/do-while.md)
  - [Switch Blocks](./switch/switch.md)
