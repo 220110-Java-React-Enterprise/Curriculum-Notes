@@ -53,7 +53,7 @@ $ touch app.js
 ```
 
 7. To begin tracking this code with Git, we initialize a local repository by running the command `git init`.
-8. If you run the `ls-la` command again, you'll notice that a `.git` directory has been added to our project. 
+8. If you run the `ls -al` command again, you'll notice that a `.git` directory has been added to our project. 
 
 <div align="center"> <img src="./../images/git-bash-1.png" width="500"/> </div>
 
