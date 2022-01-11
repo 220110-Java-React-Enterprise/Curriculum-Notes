@@ -11,6 +11,7 @@
  - [Scopes](./java/java-scopes.md)
  - [Access Modifiers](./java/access-modifiers.md)
  - [Primitives, Wrappers, & Casting](./java/java-wrappers-casting-boxing.md)
- - [Strings](./java/java-strings.md)
  - [Control Flow](./java/java-control-flow.md)
  - [Keywords, Operators, & Modifiers](./java/java-keywords-modifiers-operators.md)
+ - [Strings](./java/java-strings.md)
+ - [Arrays](./java/java-arrays.md)
