@@ -11,8 +11,8 @@ This is the highest-level scope in Java. References defined inside a class (ever
 ### Method-level Scope
 References defined inside a method, but not inside a deeper block, are method scoped. These references will not be accessable from other methods in the same class, and will not be accessable by nested classes. As soon as the method completes, the reference falls out of scope. Method scoped references are accessable from within deeper blocks in that method.
 
-### Block Scope
-References defined inside any block of code are in scope in that block and blocks that are nested deeper. As soon as that block of code ends, references defined within are out of scope.
+### Block and Loop Scope
+References defined inside any block of code are in scope in that block and blocks that are nested deeper. As soon as that block of code ends, references defined within are out of scope. These same block structures are found in control flow statements like loops. The same scoping rules apply.
 
 ```
 //MyClass.java
