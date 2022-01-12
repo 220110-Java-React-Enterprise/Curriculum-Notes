@@ -7,3 +7,10 @@ Welcome to Revature! Over the course of this curriculum we will prepare you to b
  - [Environment](./environment.md)
  - [Revature Training & Curriculum](./notes/misc/revature-training.md)
  - [Labs](./labs/README.md)
+
+## Project Specs:
+ - [Project 0](./project%20specs/project-0.md) - Console Banking App
+ - Project 1 - 2-3 person groups, custom ORM using reflection
+ - Project 2 - ~5 person groups, Full stack web site using 3rd party API
+ - Project 3 - Full group, full stack applicaiton dictated by CoE stakeholders
+
