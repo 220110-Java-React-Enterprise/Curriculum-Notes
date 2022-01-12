@@ -19,7 +19,7 @@ You will be expected to complete the minimum viable product by the deadline and 
 1. Proper use of OOP principles
 1. Documentation (all classes and methods have basic inline documentation)
 1. Use of custom data structures (do not use java.util Collection types! Implement your own List)
-1. SQL Data Persistance (at least 3 tables; all 3NF (normal form))
+1. SQL Data Persistance (at least 2 tables; all 3NF (normal form))
 
 ### Bonus Features
 1. Unit tests for service-layer classes
