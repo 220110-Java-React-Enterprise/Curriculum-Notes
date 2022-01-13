@@ -15,7 +15,7 @@ You will be expected to complete the minimum viable product by the deadline and 
 
 ### Minimum Requirements
 1. Basic validation (no negative deposits/withdrawals, malformed emails, names with numbers, etc.)
-1. All exceptions are properly caught and handled
+1. All exceptions are properly caught and handled (for this project printing the stack trace is a fine way to handle these)
 1. Proper use of OOP principles
 1. Documentation (all classes and methods have basic inline documentation)
 1. Use of custom data structures (do not use java.util Collection types! Implement your own List)
