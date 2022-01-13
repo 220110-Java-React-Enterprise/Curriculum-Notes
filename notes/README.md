@@ -16,3 +16,4 @@
  - [Strings](./java/java-strings.md)
  - [Arrays](./java/java-arrays.md)
  - [Exceptions & Errors](./java/java-exceptions.md)
+ - [Enumerations (Enums)](./java/java-enums.md)
