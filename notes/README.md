@@ -15,3 +15,4 @@
  - [Keywords, Operators, & Modifiers](./java/java-keywords-modifiers-operators.md)
  - [Strings](./java/java-strings.md)
  - [Arrays](./java/java-arrays.md)
+ - [Exceptions & Errors](./java/java-exceptions.md)
