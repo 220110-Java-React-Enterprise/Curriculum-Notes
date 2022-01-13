@@ -17,3 +17,4 @@
  - [Arrays](./java/java-arrays.md)
  - [Exceptions & Errors](./java/java-exceptions.md)
  - [Enumerations (Enums)](./java/java-enums.md)
+ - [Stack & Heap Memory](./java/java-stack-heap.md)
