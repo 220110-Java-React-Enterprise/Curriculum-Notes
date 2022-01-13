@@ -15,17 +15,17 @@ You will be expected to complete the minimum viable product by the deadline and 
 
 
 ### Minimum Requirements
-• Validation (malformed emails)
-• Exception handling
-• Documentation
-• Custom data structures (self-made ArrayList)
-• SQL Data Persistance (Users_Table, Card_Collection_Table)
+- Validation (malformed emails)
+- Exception handling
+- Documentation
+- Custom data structures (self-made ArrayList)
+- SQL Data Persistance (Users_Table, Card_Collection_Table)
 
 ### Bonus Features
-• Unit tests for service-layer classes
-• Logging messages and exceptions to a file
-• Card_Table for all existing cards in the game.
-• User adds cards via fuzzy search, so they don't have to type the full name most of the time.
+- Unit tests for service-layer classes
+- Logging messages and exceptions to a file
+- Card_Table for all existing cards in the game.
+- User adds cards via fuzzy search, so they don't have to type the full name most of the time.
 
 
 ## CCG Collection Manager User Stories
@@ -33,17 +33,17 @@ These are user stories to describe the banking app. If you are not building the 
 
 ### Minimum Viable Product
 ### User Stories
-• As a user, I can register for an account.
-• As a user, I can login to my account.
-• As a user, I can create an account.
-• As a user, I can add a card to my collection.
-• As a user, I can remove a card from my collection.
-• As a user, I can display all of the cards in my collection.
-• As a user, I can upload a txt file of cards and add them all to my collection.
+- As a user, I can register for an account.
+- As a user, I can login to my account.
+- As a user, I can create an account.
+- As a user, I can add a card to my collection.
+- As a user, I can remove a card from my collection.
+- As a user, I can display all of the cards in my collection.
+- As a user, I can upload a txt file of cards and add them all to my collection.
 
 ### Bonus Stories
-• As a user, I can view details on an individual card.
-• As a user, I can trade with other users.
+- As a user, I can view details on an individual card.
+- As a user, I can trade with other users.
 
 
 ## Tech Stack
