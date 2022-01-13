@@ -1,8 +1,6 @@
 # Notes
 
-## Week 1:
- - [Git & GitHub Basics](./misc/intro-git.md)
- - [Linux/Unix](./misc/unix-linux.md)
+## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
  - [Intro to Java](./java/intro-to-java.md)
  - [Java Compilation](./java/java-compilation.md)
@@ -18,3 +16,18 @@
  - [Exceptions & Errors](./java/java-exceptions.md)
  - [Enumerations (Enums)](./java/java-enums.md)
  - [Stack & Heap Memory](./java/java-stack-heap.md)
+
+## SQL
+ - [Relational Databases](./sql/intro-to-rdbms.md)
+ - [Intro to SQL](./sql/intro-to-sql.md)
+ - [JDBC](./sql/intro-to-jdbc.md)
+ - [Schema](./sql/defining-schema.md)
+ - [DDL, DQL, & DML](./sql/ddl-dql-dml.md)
+ - [Constraints](./sql/sql-constraints.md)
+ - [Relations](./sql/sql-relations.md)
+ - [Transactions](./sql/sql-transactions.md)
+ - [Indexing](./sql/sql-indexes.md)
+
+## Misc
+ - [Git & GitHub Basics](./misc/intro-git.md)
+ - [Linux/Unix](./misc/unix-linux.md)
