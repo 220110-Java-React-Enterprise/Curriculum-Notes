@@ -7,6 +7,7 @@ Welcome to Revature! Over the course of this curriculum we will prepare you to b
  - [Environment](./environment.md)
  - [Revature Training & Curriculum](./notes/misc/revature-training.md)
  - [Labs](./labs/README.md)
+ - [Assignments](https://github.com/220110-Java-React-Enterprise/Assignments)
 
 ## Project Specs:
  - [Project 0](./project%20specs/project-0.md) - Console Banking App
