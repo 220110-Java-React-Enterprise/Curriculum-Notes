@@ -16,6 +16,10 @@
  - [Exceptions & Errors](./java/java-exceptions.md)
  - [Enumerations (Enums)](./java/java-enums.md)
  - [Stack & Heap Memory](./java/java-stack-heap.md)
+ - [Abstract Classes & Interfaces](./java/java-abstract-classes-interfaces.md)
+ - [Generics](./java/java-generics.md)
+ - [I/O & Serialization](./java/java-serialization.md)
+ - [Annotations](/java/java-annotations.md)
 
 ## SQL
  - [Relational Databases](./sql/intro-to-rdbms.md)
