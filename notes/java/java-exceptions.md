@@ -46,6 +46,18 @@ Catch and finally blocks have several different rules which must be followed:
 * A `try/finally` block only IS allowed, but a `try` block by itself is not
 * A `finally` block will always execute, unless of course `System.exit()` is called
 
+### Try-With-Resources
+Try with resources is a newer syntax for try blocks. This is for convienence, we can instantiate objects of any class that implements the `AutoClosable` interface. This interface makes a promise, that the necessary methods will be implemented in order for the JVM to close and garbage collect these resources once the try-catch block ends.
+
+```java
+try(Connection connection = ConnectionUtil.getConnection()) {
+	logger.info("Connection successful");
+} catch (SQLException e) {
+	logger.error("Couldn't connect to the database", e);
+}
+
+```
+
 ## Custom Exceptions
 A programmer can create custom exceptions in Java by extending any exception class. If you extend `RuntimeException`, however, you will be creating an unchecked exception. This is a good idea if you do **not** want other code to have to handle your exception being thrown. If you do always want to require your exception to be handled, then create a checked exception by extending any existing one, or the `Exception` class itself.
 
