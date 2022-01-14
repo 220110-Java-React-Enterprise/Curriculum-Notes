@@ -20,7 +20,7 @@
  - [Abstract Classes & Interfaces](./java/java-abstract-classes-interfaces.md)
  - [Generics](./java/java-generics.md)
  - [I/O & Serialization](./java/java-serialization.md)
- - [Annotations](/java/java-annotations.md)
+ - [Annotations](./java/java-annotations.md)
 
 ## SQL
  - [Relational Databases](./sql/intro-to-rdbms.md)
