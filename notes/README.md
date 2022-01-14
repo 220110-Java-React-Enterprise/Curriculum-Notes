@@ -3,6 +3,7 @@
 ## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
  - [Intro to Java](./java/intro-to-java.md)
+ - [Classes and Objects](./java/java-classes-objects.md)
  - [Java Compilation](./java/java-compilation.md)
  - [Java Fundamentals](./java/java-fundamentals.md)
  - [Garbage Collection](./java/java-garbage-collection.md)
