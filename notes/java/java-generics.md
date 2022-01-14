@@ -9,7 +9,7 @@ name.add(new Object()); // uh oh - we want to prevent this from happening
 ```
 
 With generics, you can restrict a class to only accept objects of a given type and the compiler will prevent you from using any other type:
-```
+```java
 List<String> names = new ArrayList<>(); // using a List of Strings only
 names.add("Alice"); // nice!
 names.add(new Object()); // now we get a compilation error to stop this - generics save the day!
