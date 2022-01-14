@@ -47,6 +47,8 @@ Catch and finally blocks have several different rules which must be followed:
 * A `finally` block will always execute, unless of course `System.exit()` is called
 
 ### Try-With-Resources
+Try with resources is a newer syntax for try blocks. This is for convienence, we can instantiate objects of any class that implements the `AutoClosable` interface. This interface makes a promise, that the necessary methods will be implemented in order for the JVM to close and garbage collect these resources once the try-catch block ends.
+
 ```java
 try(Connection connection = ConnectionUtil.getConnection()) {
 	logger.info("Connection successful");
