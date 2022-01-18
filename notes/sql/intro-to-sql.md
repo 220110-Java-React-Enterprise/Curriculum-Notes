@@ -66,7 +66,7 @@ SQL is a case-insensitive language, but the convention is to use UPPERCASE to re
 
 For example, this:
 
-```
+```sql
 SELECT * FROM table1
 LEFT JOIN table2 ON table1.a = table2.b
 WHERE table1.x < 5
@@ -76,6 +76,6 @@ ORDER BY table1.a DESC
 
 is much more readable than:
 
-```
+```sql
 SELECT * FROM table1 LEFT JOIN table2 ON table1.a = table2.b WHERE table1.x < 5 AND table2.y > 8 ORDER BY table1.a DESC
 ```
