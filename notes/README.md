@@ -27,7 +27,7 @@
  - [Intro to SQL](./sql/intro-to-sql.md)
  - [JDBC](./sql/intro-to-jdbc.md)
  - [Schema](./sql/defining-schema.md)
- - [Sub-Languages: DCL, DDL, DQL, DML, & TCL](./sql/ddl-dql-dml.md)
+ - [Sub-Languages: DCL, DDL, DQL, DML, & TCL](./sql/sub-languages.md)
  - [Constraints](./sql/sql-constraints.md)
  - [Relations](./sql/sql-relations.md)
  - [Transactions](./sql/sql-transactions.md)
