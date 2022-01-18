@@ -6,7 +6,7 @@ These files are full of questions you are likely to be asked as part of QC. You 
 
 ### Keep the following in mind for QCs:
  - **STATIC IS NOT FINAL**  
- - We must be exact and precise with terminology. This is one of the areas we struggle with most.  
+ - We must be exact and precise with terminology.
 
 ### Practice Strategies: 
  - Study the question banks. Formulate your own answers to the questions. Share and discuss your answers with your peers, and practice them in a group setting. Hearing other associates answer questions can shed light on your own areas for improvement. Conversely, perhaps you can offer some advice to your peers. 
