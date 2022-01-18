@@ -25,14 +25,15 @@
 ## SQL
  - [Relational Databases](./sql/intro-to-rdbms.md)
  - [Intro to SQL](./sql/intro-to-sql.md)
- - [JDBC](./sql/intro-to-jdbc.md)
- - [Schema](./sql/defining-schema.md)
  - [Sub-Languages: DCL, DDL, DQL, DML, & TCL](./sql/sub-languages.md)
+ - [Schema](./sql/defining-schema.md)
  - [Constraints](./sql/sql-constraints.md)
  - [Relations](./sql/sql-relations.md)
- - [Transactions](./sql/sql-transactions.md)
+ - [Set Operations](./sql/set-operations.md)
  - [Indexing](./sql/sql-indexes.md)
+ - [Transactions](./sql/sql-transactions.md)
  - [PL/SQL](./sql/pl-sql.md)
+ - [JDBC](./sql/intro-to-jdbc.md)
 
 ## Misc
  - [Git & GitHub Basics](./misc/intro-git.md)
