@@ -1,6 +1,20 @@
 # SQL Sub-Languages
 Traditionally when we write in SQL we write the SQL keywords in CAPS. This way it's clear which words are part of SQL. With modern applications coloring and formatting code it's not as important anymore, so you may see this convention dropped. SQL is **not case sensitive**. Below are 3 of the sub-languages in SQL. There are 4 or 5 sub languages depending on who you ask. The other two we don't see are DCL and TCL, which we will cover when we get into SQL in greater detail. DCL is used for controlling user access privilages, and TCL is used for transactions.
 
+### DCL
+
+Data Control Language statements are used to manage the security and control of database systems.
+
+ - GRANT, to grant any permissions to an existing user.
+```sql
+GRANT PERMISSION TO USERNAME
+```
+
+ - REVOKE, to revoke any permissions of an existing user.
+```sql
+REVOKE PERMISSION TO USERNAME
+```
+
 ### DDL
 **Data Definition Language (DDL)** statements are those for creating and modifying database objects. We use DDL to define the database **schema**. Schema just means the structure of the database, including tables, indexes, constraints, and more. 
   
@@ -22,6 +36,24 @@ Some examples of DDL keywords include:
  - `DELETE`
 
 Note that `DELETE` and `DROP` are different keywords with different meanings. One is used to drop objects like tables. The other is used to remove data from tables. These statements commonly include clauses that filter data, such as `WHERE`.
+
+
+### TCL
+
+Transaction Control Language statements are utilized to manage transactions within a relational database.
+
+ - COMMIT, any DML operations that were executed before the statements will be persisted permanently.
+ - ROLLBACK, any DML operations between two COMMIT statements will be completely erased (something like Ctrl + Z that will stop only when it reaches last time you opened the specific file). Committed transactions cannot be rollbacked.
+ - SAVEPOINT, utilized to ROLLBACK to a specific point in time.
+
+The general flow of using TCL could be as follows:
+
+```
+[Many DML Operations]
+SAVEPOINT A
+[Many DML Operations]
+ROLLBACK TO A
+```
 
 ## SQL Examples
 Below will be some examples that show the use of the basic SQL we've covered thus far:
