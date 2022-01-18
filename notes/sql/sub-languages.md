@@ -1,19 +1,13 @@
 # SQL Sub-Languages
-Traditionally when we write in SQL we write the SQL keywords in CAPS. This way it's clear which words are part of SQL. With modern applications coloring and formatting code it's not as important anymore, so you may see this convention dropped. SQL is **not case sensitive**. Below are 3 of the sub-languages in SQL. There are 4 or 5 sub languages depending on who you ask. The other two we don't see are DCL and TCL, which we will cover when we get into SQL in greater detail. DCL is used for controlling user access privilages, and TCL is used for transactions.
+## Overview
 
-### DCL
+All SQL statements are separated into different sub categories, also known as sub-languages. There are 5 sublanguages of SQL in total:
 
-Data Control Language statements are used to manage the security and control of database systems.
-
- - GRANT, to grant any permissions to an existing user.
-```sql
-GRANT PERMISSION TO USERNAME
-```
-
- - REVOKE, to revoke any permissions of an existing user.
-```sql
-REVOKE PERMISSION TO USERNAME
-```
+1. DDL - data definition language
+2. DML - data manipulation language
+3. DQL - data query language
+4. DCL - data control language
+5. TCL - transaction control language
 
 ### DDL
 **Data Definition Language (DDL)** statements are those for creating and modifying database objects. We use DDL to define the database **schema**. Schema just means the structure of the database, including tables, indexes, constraints, and more. 
@@ -36,6 +30,21 @@ Some examples of DDL keywords include:
  - `DELETE`
 
 Note that `DELETE` and `DROP` are different keywords with different meanings. One is used to drop objects like tables. The other is used to remove data from tables. These statements commonly include clauses that filter data, such as `WHERE`.
+
+### DCL
+
+Data Control Language statements are used to manage the security and control of database systems.
+
+ - GRANT, to grant any permissions to an existing user.
+```sql
+GRANT PERMISSION TO USERNAME
+```
+
+ - REVOKE, to revoke any permissions of an existing user.
+```sql
+REVOKE PERMISSION TO USERNAME
+```
+
 
 
 ### TCL
