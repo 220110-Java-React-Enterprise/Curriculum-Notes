@@ -32,7 +32,7 @@
  - [Relations](./sql/sql-relations.md)
  - [Transactions](./sql/sql-transactions.md)
  - [Indexing](./sql/sql-indexes.md)
- - [PL/SQL](.sql/pl-sql.md)
+ - [PL/SQL](./sql/pl-sql.md)
 
 ## Misc
  - [Git & GitHub Basics](./misc/intro-git.md)
