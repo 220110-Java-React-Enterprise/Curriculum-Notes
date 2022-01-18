@@ -1,0 +1,21 @@
+# QC Questions on Object Oriented Programming
+
+ - Describe the characteristics of the object-oriented paradigm
+ - Pillars of OOP
+ - Define Abstraction and provide advantages to using it
+ - Define Polymorphism and provide advantages to using it
+ - Define Inheritance and provide advantages to using it
+ - Define Encapsulation and provide advantages to using it
+ - What are some different types of polymorphism?
+ - What are some different inheritance strategies?
+ - What is sub-type polymorphism?
+ - What is parametric polymorphism?
+ - What is ad hoc polymorphism?
+ - What is the difference between class-based inheritance and prototypal inheritance?
+ - What does the acronym SOLID stand for?
+ - Describe the Single Responsibility Principal
+ - Describe the Open/Closed Principal
+ - Describe the Liskov Substitution Principal
+ - Describe the Interface Segregation Principal
+ - Describe the Dependency Inversion Principal
+ - What is the DRY Principal?
