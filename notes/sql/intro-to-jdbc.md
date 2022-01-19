@@ -47,9 +47,8 @@ This step is only necessary for drivers prior to JDBC 4.0 (released with Java SE
 Now we can use the `DriverManager` class to get a `Connection` to the database, given that we have the JDBC URL, username, and password. Generally these parameters should be stored in an external configuration file that can be loaded dynamically and changed without affecting the application code.
 
 ```java
-try {
+try ( Connection conn = DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);){
   // more code goes here
-  Connection conn = DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
 } catch (SQLException e) {}
 ```
 
