@@ -94,7 +94,7 @@ PreparedStatement ps = conn.prepareStatement();
 String sql = "SELECT * FROM employees WHERE age > ? AND location = ?";
 ps.setInt(1, 40);
 ps.setString(2, "New York");
-ResultSet rs = ps.executeQuery();
+ResultSet rs = ps.executeQuery(sql);
 ```
 
 The `Statement` and `PreparedStatement` also have additional methods for sending SQL, including:
