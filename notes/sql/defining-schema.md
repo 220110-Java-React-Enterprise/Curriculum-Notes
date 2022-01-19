@@ -99,4 +99,4 @@ Finally, to get to third normal form, a table must **also**:
 
 To advance into higher normal forms, we typically "break up" tables into multiple tables and relate them to each other via foreign keys.
 
-A good way of remembering these normal forms in order is to remember the legal proceeding of swearing to tell the truth, the whole truth, and nothing but the truth. In relational databases, we must have **the key (1NF), the whole key (2NF), and nothing but the key (3NF)**.
+A good way of remembering these normal forms in order is to remember the legal proceeding of swearing to tell the truth, the whole truth, and nothing but the truth. In relational databases, we must have **the key (1NF), the whole key (2NF), and nothing but the key (3NF)** so help me Codd.
