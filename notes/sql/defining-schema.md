@@ -100,3 +100,5 @@ Finally, to get to third normal form, a table must **also**:
 To advance into higher normal forms, we typically "break up" tables into multiple tables and relate them to each other via foreign keys.
 
 A good way of remembering these normal forms in order is to remember the legal proceeding of swearing to tell the truth, the whole truth, and nothing but the truth. In relational databases, we must have **the key (1NF), the whole key (2NF), and nothing but the key (3NF)** so help me Codd.
+
+One way to eschew all of this for the purposes of this training class is to simply always use a single column primary key whose sole purpose is to uniquely identify any row in the table. Doing this will cover all of the primary key considerations from 1NF to 3NF. The only other thing we would be concerned with for this training would be the atomicity of columns, that is columns should be as granular and specific as possible.
