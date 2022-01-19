@@ -90,11 +90,11 @@ ResultSet rs = stmt.executeQuery(sql);
 Alternatively, a `PreparedStatement` can be used. This interface gives us the flexibility of specifying parameters with the `?` symbol. It also protects against [SQL injection](https://en.wikipedia.org/wiki/SQL_injection) when user input is used by pre-compiling the SQL statement.
 
 ```java
-PreparedStatement ps = conn.prepareStatement();
 String sql = "SELECT * FROM employees WHERE age > ? AND location = ?";
+PreparedStatement ps = conn.prepareStatement(sql);
 ps.setInt(1, 40);
 ps.setString(2, "New York");
-ResultSet rs = ps.executeQuery(sql);
+ResultSet rs = ps.executeQuery();
 ```
 
 The `Statement` and `PreparedStatement` also have additional methods for sending SQL, including:
