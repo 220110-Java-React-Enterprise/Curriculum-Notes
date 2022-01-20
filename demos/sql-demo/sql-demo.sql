@@ -24,6 +24,17 @@ SET first_name = UCASE(first_name);
 COMMIT;
 
 
+# Creating the associates table:
+CREATE TABLE associates (
+	associate_id INT AUTO_INCREMENT,
+	first_name VARCHAR(200),
+	last_name VARCHAR(200),
+	age INT,
+	CONSTRAINT associates_pk PRIMARY KEY (associate_id)
+);
+
+
+
 # making changes to our table schema, we add some columns, but then remove the state
 # column because we decided to utilize a lookup table for states.
 
