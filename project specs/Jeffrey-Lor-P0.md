@@ -54,6 +54,6 @@ You should be employing the following technologies in your project.
 
 ## Deadline & Presentation
  - Finalized version of your project must be pushed to your repository within the training originzation by 9:00 AM Central time on the date of the presentation showcase. Commits after that time will not be considered. The most recent commit submitted before that time will be the version of the project that is graded.
-   - Presentation Showcase (Due Date): Wednesday, January 27th 2022, 9:00 AM CST.
+   - Presentation Showcase (Due Date): Thursday, January 27th 2022, 9:00 AM CST.
  - You will give a brief (<=5 minute) presentation of your project. Be prepared to answer questions about your work from the QC team.
  - Your work **MUST BE YOUR OWN**. Collaboration is allowed and encouraged, but at the end of the project you must have an excellent understanding of every line of code in your project and be able to answer questions about any part of it.
