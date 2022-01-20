@@ -24,3 +24,4 @@
  - [One-To-One](./SQLone-to-one)
  - [One-To-Many](./SQL/one-to-many)
  - [Many-To-Many](./SQL/many-to-many)
+ - [SQL Assignment(Lab)](./SQL/sql-assignment/sql-assignment.sql)
