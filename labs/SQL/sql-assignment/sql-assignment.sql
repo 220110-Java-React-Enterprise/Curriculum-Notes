@@ -1,3 +1,20 @@
+/*
+This script is normally given as an assignment, but we will just consider it an optional lab. 
+The purpose of this script is to show example code of all of the major concepts, and at the end ask
+you to test your skills. All of the tasks given at the bottom can be completed by studying
+just the example code in this script.
+
+Make sure to change anything in <ANGLE_BRACKETS> these are placeholders for your own info.
+
+The first section sets up the database, dropping and re-creating the tables.
+The second section inserts some data into the new empty database.
+The third section makes some updates to the data.
+The fourth section queries the database.
+And finally the fifth section has a handful of tasks for you to implement.
+
+*/
+
+
 ###########################################################
 ################## CREATE FRESH DATABASE ##################
 ###########################################################
