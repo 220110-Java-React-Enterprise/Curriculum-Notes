@@ -1,7 +1,7 @@
 # Aggregate and Scalar Functions
 
 ### Aggregate Functions
-Aggregate functions preform operations on a set of data and produce a single output for the whole set.
+Aggregate functions perform operations on a set of data and produce a single output for the whole set.
 
  - COUNT()
  - SUM()
@@ -12,7 +12,7 @@ Aggregate functions preform operations on a set of data and produce a single out
  - LAST()
 
 ### Scalar Functions
-Scalar functions preform operations on a set of data and produce one output for each input.
+Scalar functions perform operations on a set of data and produce one output for each input.
  - LCASE()
  - UCASE()
  - LEN()
