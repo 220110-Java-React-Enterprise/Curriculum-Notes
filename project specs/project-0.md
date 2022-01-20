@@ -50,7 +50,7 @@ You should be employing the following technologies in your project.
  - MariaDB deployed on AWS RDS
 
 ## High-level Visualization of Possible P0 Structure
-![High-level Visualization of Possible P0 Structure](./P0%20-%20Structure.drawio.png)
+![High-level Visualization of Possible P0 Structure](./Capture.png)
 
 ## Deadline & Presentation
  - Finalized version of your project must be pushed to your repository within the training originzation by 9:00 AM Central time on the date of the presentation showcase. Commits after that time will not be considered. The most recent commit submitted before that time will be the version of the project that is graded.
