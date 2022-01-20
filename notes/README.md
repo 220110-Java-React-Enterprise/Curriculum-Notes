@@ -33,6 +33,7 @@
  - [Indexing](./sql/sql-indexes.md)
  - [Transactions](./sql/sql-transactions.md)
  - [PL/SQL](./sql/pl-sql.md)
+ - [Aggregate & Scalar Functions](./sql/sql-functions.md)
  - [JDBC](./sql/intro-to-jdbc.md)
 
 ## Misc
