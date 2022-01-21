@@ -5,3 +5,5 @@
  - [Console Renderer](./console-renderer/)
  - [Factory Design Pattern](./factory-design-pattern/)
  - [SQL Scripting Stuff](./sql-demo/sql-demo.sql)
+ - [Recursion](./recursive-linked-list-insertion/)
+ - [Greedy Algorithms](./greedy-demo/)
