@@ -21,6 +21,7 @@
  - [Generics](./java/java-generics.md)
  - [I/O & Serialization](./java/java-serialization.md)
  - [Annotations](./java/java-annotations.md)
+ - [Junit & Mockito](./java/java-junit.md)
 
 ## SQL
  - [Relational Databases](./sql/intro-to-rdbms.md)
