@@ -9,7 +9,7 @@ Your first project should demonstrate your knowledge of the following topics:
  - Basic Data Structures
  - Basic File I/O
 
-You will be building a console application that persists data in a database with at least 3 tables which adhere to 3rd normal form (3NF). The basic form of this project should be that of a console-based banking app. If you want to mix it up a bit and can come up with a project idea that meets all the same requirements, contact your trainer to discuss and develop user stories. If you decide to go with the bank app, it should implement all of the required user stories listed below.
+You will be building a console application that persists data in a database with at least 2 tables which adhere to 3rd normal form (3NF). The basic form of this project should be that of a console-based banking app. If you want to mix it up a bit and can come up with a project idea that meets all the same requirements, contact your trainer to discuss and develop user stories. If you decide to go with the bank app, it should implement all of the required user stories listed below.
   
 You will be expected to complete the minimum viable product by the deadline and give a brief 5 minute presentation demonstrating your project and answering questions from the QC team.
 
