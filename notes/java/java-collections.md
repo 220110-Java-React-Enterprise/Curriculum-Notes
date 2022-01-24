@@ -117,7 +117,7 @@ Map does not implement the Collection interface, however it is considered to be 
 `TreeMap` is a Map whose:
 * Keys are stored in a Sorted Tree structure
 * Main benefit is that keys are always in a sorted order
-* Insertion/Retrieval are slow
+* Insertion/Removal are slow
 * Cannot contain null keys as null cannot be compared for sorting
 
 ### HashTable
