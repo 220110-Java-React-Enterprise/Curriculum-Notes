@@ -138,7 +138,7 @@ public synchronized void produce() {
 	*/
 	//producing data
 	queue.add(data);
-	notifyAll();
+	notify();
 }
 ```
 
@@ -156,6 +156,6 @@ public synchronized String consume() {
 		*/
 		//consuming data
 		queue.remove(data);
-		notifyAll()
+		notify()
 }
 ```
