@@ -21,6 +21,9 @@
  - [Generics](./java/java-generics.md)
  - [I/O & Serialization](./java/java-serialization.md)
  - [Annotations](./java/java-annotations.md)
+ - [Collections API](./java/java-collections.md)
+ - [Functional Programming](./java/functional-programming.md)
+ - [Threads & Concurrency](./java/java-threads.md)
  - [Junit & Mockito](./java/java-junit.md)
 
 ## SQL
