@@ -92,6 +92,10 @@ There are two options to create and execute a `Thread` in Java:
 		}
 	}
 ```
+### run() vs. start()
+Start creates a thread, run starts execution. 
+Let's say we create a Thread object, obj, with a runnable parameter. If we call obj.run() the run() method begins executing *in the current thread*. It does not spawn a new thread, it simply jumps to that execution and continues until complete, much like any method invokation. start() actually spins up a new thread of execution, and calls it's run() method to begin executing instrucitons. This does result in a new thread running, and execution in the original thread continues, both running in parallel.
+
 
 ### Runnable and Lambda Expressions
 Because `Runnable` is a *functional* interface, we can use a lambda expression to define thread behavior inline instead of implementing the interface in a separate class. We pass a lambda expression as the `Runnable` type required in the `Thread` constructor. For example:
