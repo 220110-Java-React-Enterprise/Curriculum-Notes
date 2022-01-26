@@ -11,6 +11,7 @@ import Views.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String ...args) {
@@ -22,6 +23,11 @@ public class Main {
         ViewManager.getViewManager().registerView(new CreateNewItemView());
         ViewManager.getViewManager().registerView(new MarkCompleteView());
         //ViewManager.getViewManager().registerView(new NewItemView());
+
+        Scanner sc = new Scanner(System.in);
+        int i = sc.nextInt();
+        sc.nextLine();
+
 
 
         try {
