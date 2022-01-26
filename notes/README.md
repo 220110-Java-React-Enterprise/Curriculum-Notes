@@ -40,6 +40,14 @@
  - [Aggregate & Scalar Functions](./sql/sql-functions.md)
  - [JDBC](./sql/intro-to-jdbc.md)
 
+## Web Services
+ - [Intro to Web Services](./web%20services/intro-to-web-services.md)
+ - [Into to HTTP](./web%20services/intro-to-http.md)
+ - [REST I](./web%20services/rest.md)
+ - [REST II](./web%20services/best-practices.md)
+ - [Richardson Maturity Model](./web%20services/rest-rmm.md)
+ - [Client/Server](./web%20services/client-server-architecture.md)
+
 ## Misc
  - [Git & GitHub Basics](./misc/intro-git.md)
  - [Linux/Unix](./misc/unix-linux.md)
