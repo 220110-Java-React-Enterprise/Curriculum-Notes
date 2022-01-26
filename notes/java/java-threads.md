@@ -117,7 +117,7 @@ The term "deadlock" describes a situation where 2 or more threads are blocked tr
 ### `synchronized` keyword
 In a multithreaded environment, a race condition occurs when 2 or more threads attempt to access the same resource. Using the `synchronized` keyword on a piece of logic enforces that only one thread can access the resource at any given time. `synchronized` blocks or methods can be created using the keyword. Also, one way a class can be "thread-safe" is if all of its methods are `synchronized`.
 
-## Producer-Consumer Problem - RE-WRITE THE EXAMPLE EXPLINATIONS ABOUT WAI AND NOTIFY
+## Producer-Consumer Problem
 
 The Producer-Consumer problem is a classic example of a multi-process synchronization problem. Here, we have  a *fixed-size buffer* and two classes of threads - *producers* and *consumers*. Producers produces the data to the queue and Consumers consume the data from the queue. Both producer and consumer shares the same fixed-size buffer as a queue.
 
@@ -127,35 +127,93 @@ We can solve the Producer-Consumer problem by using `wait()` & `notify()`methods
 
 Producer thread will keep on producing data for Consumer to consume. It will use `wait()` method when Queue is full and use `notify()` method to send notification to Consumer thread once data is added to the queue.
 
+Consumer thread will consume the data form the queue. It will also use `wait()` method to wait if queue is empty. It will also use `notify()` method to send notification to producer thread after consuming data from the queue.
+
+
 ```java
-public synchronized void produce() {
-	while (queue.size() == MAX_SIZE) {
-		//Queue is full, Producer thread waiting for consumer to take data from the queue
-		wait();
-	}
-	/* When queue has space, Producer produces the data and adds them into the queue.
-	*  After that, Producer sends the notification to the Consumer.
-	*/
-	//producing data
-	queue.add(data);
-	notify();
+//ProducerConsumer.java
+public class ProducerConsumer {
+    private final Queue<String> buffer;
+    private final boolean running;
+    private final int MAX_SIZE;
+
+    public ProducerConsumer(int maxSize) {
+        MAX_SIZE = maxSize;
+        running = true;
+        buffer = new ConcurrentLinkedDeque<>();
+    }
+
+    public void produce() throws InterruptedException {
+        while(running) {
+
+            synchronized (this) {
+
+                while (buffer.size() >= MAX_SIZE) {
+                    wait();
+                }
+
+                String rand = Integer.toString((int) (Math.random() * 100));
+                buffer.add(rand);
+                System.out.println("Producing...  " + rand);
+
+                notify();
+                Thread.sleep(500); //This is unnecessary, just here to slow the console output and make it easier to read
+
+
+            }
+        }
+    }
+
+    public void consume() throws InterruptedException {
+        while(running) {
+            synchronized (this) {
+                while (buffer.isEmpty()) {
+                    wait();
+                }
+
+                String str = buffer.poll();
+                System.out.println("Consuming...  " + str + "\n");
+
+                notify();
+                Thread.sleep(500); //This is unnecessary, just here to slow the console output and make it easier to read
+            }
+        }
+    }
 }
 ```
 
-
-Consumer thread will consume the data form the queue. It will also use `wait()` method to wait if queue is empty. It will also use `notify()` method to send notification to producer thread after consuming data from the queue.
-
 ```java
-public synchronized String consume() {
-	while (messages.isEmpty()) {
-		//Queue is empty, Consumer thread waiting for producer to put data to the queue
-		wait();
-	}
-		/* When queue has data, Consumer consumes the data and removes it from the queue.
-		*  After that, Consumer sends the notification to the Producer.
-		*/
-		//consuming data
-		queue.remove(data);
-		notify()
+//Main.java
+public class Main {
+    public static void main(String[] args) {
+
+
+        ProducerConsumer pc = new ProducerConsumer(10);
+
+        Thread producerThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try{
+                    pc.produce();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        Thread consumerThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    pc.consume();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        producerThread.start();
+        consumerThread.start();
+    }
 }
 ```
