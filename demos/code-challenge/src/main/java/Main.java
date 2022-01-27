@@ -13,6 +13,7 @@ public class Main {
          them from the array. After you have removed K children, the monster eats the rest.
 
          Remember, you want to save the youngest children.
+         Write your answer in the Solution class.
          */
 
         //Constraints:
