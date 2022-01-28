@@ -9,9 +9,8 @@ REST stands for REpresentational State Transfer. REST is a software architectura
 A resource in REST is a unit of identifiable information. Basically, a resource is an analog of an object in OOP. Note that as a resource changes over time it is not a new resource. The same resource is in a different state. Resources are identified by a URI (Universal Resource Identifier). A URL (web addresses we are all familiar with) is a locator, and a specific type of URI which is fully qualified.  
 
 A Restful system consists of a:
-
-client who requests for the resources.
-server who has the resources.
+ - client who requests for the resources.
+ - server who has the resources.
 
 ## REST Constraints
 There are six architectural constraints that need to be followed in order to be RESTful.
