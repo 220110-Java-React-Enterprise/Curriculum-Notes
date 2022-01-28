@@ -7,4 +7,5 @@
  - [SQL Scripting Stuff](./sql-demo/sql-demo.sql)
  - [Recursion](./recursive-linked-list-insertion/)
  - [Greedy Algorithms](./greedy-demo/)
+ - [Reflection](./reflection-demo)
  - [To Do App - P0 tech demo](./P0-To-Do-Demo/)
