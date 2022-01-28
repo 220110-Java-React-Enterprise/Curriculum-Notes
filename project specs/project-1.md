@@ -1,4 +1,4 @@
-# Project 1 - Remote Object Store
+# Project 1 - WIP
 
 ## Description
 
