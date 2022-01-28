@@ -49,5 +49,6 @@
  - [Client/Server](./web%20services/client-server-architecture.md)
 
 ## Misc
+ - [Dependency Injection (Spring)](./spring/spring-di.md)
  - [Git & GitHub Basics](./misc/intro-git.md)
  - [Linux/Unix](./misc/unix-linux.md)
