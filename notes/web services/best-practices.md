@@ -14,6 +14,6 @@ For example, when a `RESOURCE NOT FOUND` is received don't send the SERVER ERROR
  
 Ensure that there is no secure information in the URI. Think about what you are putting in your URI. Ensure that there is nothing secure that is going in the URIs.
  
-Always use plurals. In the previous examples, we have used /users instead of using /user. Similarly, for accessing a resource, we have used `/users/1 not /user/1`. It is more readable than using the singular.
+Always use plurals. In the previous examples, we have used /users instead of using /user. Similarly, for accessing a resource, we have used `/users/1` not `/user/1`. It is more readable than using the singular.
  
 When we think about resources, always use nouns for resources. But it is not always possible. There are always exception scenarios. For all these exceptions scenarios, define a consistent approach if we are searching through user use /`user/search`.
