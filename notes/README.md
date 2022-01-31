@@ -1,4 +1,12 @@
 # Notes
+### Newest:
+ - [Intro to Hibernate & ORMs](./sql/hibernate.md)
+ - [Intro to Servlets](./web%20services/intro-to-servlets.md)
+ - [Servlet Config](./web%20services/servlet-config.md)
+ - [Using Servlets](./web%20services/using-servlets.md)
+ - [Consuming APIs from Java](./misc/consuming-api.md)
+ - [Jackson Library](./misc/jackson.md)
+ - [JSON](./misc/intro-to-json.md)
 
 ## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
@@ -60,3 +68,10 @@
  - [Dependency Injection (Spring)](./spring/spring-di.md)
  - [Git & GitHub Basics](./misc/intro-git.md)
  - [Linux/Unix](./misc/unix-linux.md)
+ - [Consuming APIs from Java](./misc/consuming-api.md)
+ - [Jackson Library](./misc/jackson.md)
+ - [JSON](./misc/intro-to-json.md)
+
+## Design Patterns
+ - [Design Patterns](./misc/design-patterns.md)
+ - [Front Controller Design Pattern](./web%20services/front-controller.md)
