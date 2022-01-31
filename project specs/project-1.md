@@ -33,8 +33,9 @@ This project will be done in teams of 2-3 members that will be assigned when we 
 ### Bonus Features
 1. Basic HTML/CSS/JS front end to consume API
 2. ORM can build foreign key relations according to object references.
-3. Automated DevOps CI/CD pipeline to build and deploy project
-4. Adequate unit test line coverage for service-layer methods(Test as much as possible, ask trainer if unsure)
+3. ORM can design schema on the fly.
+4. Automated DevOps CI/CD pipeline to build and deploy project
+5. Adequate unit test line coverage for service-layer methods(Test as much as possible, ask trainer if unsure)
 
 
 ## Object Store
