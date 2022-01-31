@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--web.xml is your depoyment descriptor
+        this is how tomcat gathers information about your project, such as welcome files,
+            available servlets, how to handle errors and exceptions, and other various
+            configurations you may want tomcat to know about.
+    It belongs in src/main/webapp/WEB-INF/ directory
+-->
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        version="2.5">
+
+    <listener>
+        <listener-class>servlets.DependencyLoaderListener</listener-class>
+    </listener>
+    
+    <servlet>
+        <servlet-name>pingServlet</servlet-name>
+        <servlet-class>servlets.PingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>pingServlet</servlet-name>
+        <url-pattern>/ping</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>dataServlet</servlet-name>
+        <servlet-class>servlets.DataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dataServlet</servlet-name>
+        <url-pattern>/data</url-pattern>
+    </servlet-mapping>
+
+</web-app>
