@@ -41,7 +41,7 @@
  - [JDBC](./sql/intro-to-jdbc.md)
 
 ## ORMs
- - [Intro to Hibernate & ORMs](./misc/hibernate.md)
+ - [Intro to Hibernate & ORMs](./sql/hibernate.md)
  - [Hibernate Configuration](./misc/hibernate-config.md)
  - [Executing Statements With Hibernate](./misc/hibernate-querying.md)
 
