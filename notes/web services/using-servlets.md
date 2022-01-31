@@ -69,7 +69,7 @@ public class HelloWorld extends HttpServlet {
     public void doGet(HttpServletRequest req,HttpServletResponse res) throws ServletException,IOException
        {
     	// set the content type as plain text
-    	response.setContentType("text/plain");
+    	res.setContentType("text/plain");
             
         PrintWriter out = response.getWriter();
         out.println("Hello World");  // writes a plain text to the response object
