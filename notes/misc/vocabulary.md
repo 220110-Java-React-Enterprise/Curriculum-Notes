@@ -1,0 +1,36 @@
+ - Compiler - Softwae that takes program code and transforms it into a lower-level language. The Java compiler turns java code into bytecode for the JVM.
+ - Integrated Development Environment (IDE) - A software suite that includes an editor, one or more compilers, and other tools for modern software development.
+ - JRE, JVM, JDK - Java Runtime Environment contains software necessary to run Java applications, including the Java Virtual MAchine which translates bytecode into machine specific instructions. Finally the Java Development Kit which includes both of those and other tools fr Java developers.
+ - Client - End-user software, usually with a UI, establishes client/server connections.
+ - Server - Remote accessable machine that serves some sort of resource to clients.
+ - Web Server - A server that handles and responds to HTTP requests.
+ - Servlet - A small bit of code which processes web requests and returns a response.
+ - Relational Database Management system (RDBMS) - The software that runs and maintains a database.
+ - Database - One or more files that can be manipulated by a database management system.
+ - Class - The encapsulation of data and behaviors, is a sort of template that describes objects.
+ - Object - Instances of encapsulated fields and methods instantiated from a class.
+ - Method - A function that is part of a class, executable program brhaviors which can be invoked from elsewhere in the program.
+ - Field - Data that is stored in a class.
+ - Keyword - a reserved word which has one or more specific meanings in the language.
+ - Constructor - In Java, a special type of method invoked to instantiate new objects of a class. Has no return type and must match the name of the class.
+ - Args - Arguments, sent to a Java application through the command line and passed into the program in the main method parameter list as an array of strings.
+ - Parameter List - (enclosed in parenthesis) objects and primitives sent to a method.
+ - Type Parameter List - <enclosaed in angle brackets> resolves a generic to a specific type.
+ - Generic - A placeholder type to be resolved later, typically a capital letter like E, T, K or V
+ - Primitive - a low level data type, rather than an object reference this memory actually holds a binary representation of the data.
+ - Signature - The return type, modifiers, name, and parameter list of a method form the signature.
+ - Abstract - A method without an implementation. Or a class filled with abstract methods.
+ - Concrete - A method with an implementation. Or a class filled with concrete methods.
+ - Inherit - To receive data and behaviors from a class or interface.
+ - Parent - In an inheritence relationship this is the entity who's data and behaviors are inherited.
+ - Child - In an inheritence relationship this is the entity who receives data and behaviors from another.
+ - Invoke - To call a method.
+ - Reference - A pointer to a memory address where an object can be found.
+ - Orphan - An object with no remaining valid references, to be garbage collected.
+ - Type - A class/object or primitive
+ - Return - When a method finishes and execution continues from where the method was called. A method also usually resolves into some data after it completes, this data is returned from the method.
+ - Return Type - The type that a method will return.
+ - This - Allows an object to refer to itself.
+ - Marshal - To restructure data for a new purpose.
+ - Representation - Different forms information can take. All data is represented as binary behind the scenes. 
+ - Immutable - Cannot be changed, final, constant.

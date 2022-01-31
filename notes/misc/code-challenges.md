@@ -1,0 +1,16 @@
+# Strategies For Code Challenges
+There are two different ways we can use code challenges like Hackerrank or Leetcode. We can practice our problem solving skills, or we can practice our Java writing skills. If you find you struggle with writing Java code, then you may be better served to simply practice writing Java. If you don't struggle with the syntax, then you may want to practice creating effective solutions to the problems. 
+
+## For those struggling with Java syntax: 
+Don't worry about coming up with the most creative or effective solution. Don't ignore problem solving completely, but the focus of your efforts shoulld be on practicing the syntax. Take some time to review the problem and psuedo-code yourself some ideas to solve it. If you can't come up with much, that's okay. Go find someone else's soution. Check the discussions in Hackerrank or Leetcode, there people talk about their solutions. Find something you can understand, digest it completely, and then try to implement that solution yourself. Notice here we aren't so interested in coing up with our own solution, we are more interested with implementing someone elses solution. Note: This is not an invitation to cheat on code challenges. If given a code challenge in class the work should be ENTIRELY YOUR OWN. We are simply talking about using these sorts of challenges to practice the Java fundementals instead of flexing our creative problem solving muscles. Another important consideration: Don't just copy/paste or transcribe someone else's solution. That will not help you at all. You need to be coding for yourself, or you get nothing out of this. You simply shouldn't worry about inventing creative solutions, instead worry about practicing the fundementals.
+
+## Otherwise...
+Take your time and don't skip right to coding. Don't be overwhelmed or anxious about time limits. Just take three deep breaths, and go one step at a time (Slowly and consciously taking three deep breaths will help tamp down the panic you might be feeling).  
+Carefully parse the problem. They are sometimes worded obtusely, or contain more math than english words. Take it slowly and write notes if you need to. Keep the core of the problem in mind at all times, don't lose sight of your goal. Look for hints in the text, or even the title of the challenge. If it says something about hashmaps in the title, you probably need a hashmap to solve.  
+Brainstorm and psuedo-code your solution. DON'T SKIP THIS STEP. Type a handful of lines of comments explaining to an imaginary audience what steps your solution will take to succeed. It doesn't have to be comrehensive, or even correct. It is very likely you will deviate from your initial plan.  
+Now we are ready to write code. Take the solution you devised and begin producing it. Take it one step at a time, and if you find you must deviate from your initial plan, write more comments for your imaginary audience.
+
+## So, in closing...
+Practicing problem solving: write your own solution, seek assistance and hints but avoid being given the answer.  
+Practicing syntax/fundementals: implement someone else's solution, practice by coding.  
+Real world code challenge(interview, panel, QC, or training): write your own solution, no notes or assistance, only official documentation if allowed.
