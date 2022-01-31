@@ -40,6 +40,11 @@
  - [Aggregate & Scalar Functions](./sql/sql-functions.md)
  - [JDBC](./sql/intro-to-jdbc.md)
 
+## ORMs
+ - [Intro to Hibernate & ORMs](./misc/hibernate.md)
+ - [Hibernate Configuration](./misc/hibernate-config.md)
+ - [Executing Statements With Hibernate](./misc/hibernate-querying.md)
+
 ## Web Services
  - [Intro to Web Services](./web%20services/intro-to-web-services.md)
  - [Into to HTTP](./web%20services/intro-to-http.md)
@@ -47,6 +52,9 @@
  - [REST II](./web%20services/best-practices.md)
  - [Richardson Maturity Model](./web%20services/rest-rmm.md)
  - [Client/Server](./web%20services/client-server-architecture.md)
+ - [Intro to Servlets](./web%20services/intro-to-servlets.md)
+ - [Servlet Config](./web%20services/servlet-config.md)
+ - [Using Servlets](./web%20services/using-servlets.md)
 
 ## Misc
  - [Dependency Injection (Spring)](./spring/spring-di.md)
