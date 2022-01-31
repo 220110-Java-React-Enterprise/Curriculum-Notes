@@ -1,6 +1,6 @@
 # Notes
 ### Newest:
- - [Intro to Hibernate & ORMs](./sql/hibernate.md)
+ - [Intro to Hibernate & ORMs](./misc/hibernate.md)
  - [Intro to Servlets](./web%20services/intro-to-servlets.md)
  - [Servlet Config](./web%20services/servlet-config.md)
  - [Using Servlets](./web%20services/using-servlets.md)
