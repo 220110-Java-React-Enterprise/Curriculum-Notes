@@ -10,11 +10,18 @@
         xmlns="http://java.sun.com/xml/ns/javaee"
         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
         version="2.5">
-
+    <!--
+        Dependency loader listener, this is the class which contains init and destroy methods
+        for the servlet container
+    -->
     <listener>
         <listener-class>servlets.DependencyLoaderListener</listener-class>
     </listener>
 
+    <!--
+        These mappings map URL parameters to servlet names, and then servlet names to servlet classes
+    -->
+    <!-- ping servlet for checking if server is up -->
     <servlet>
         <servlet-name>pingServlet</servlet-name>
         <servlet-class>servlets.PingServlet</servlet-class>
@@ -23,7 +30,8 @@
         <servlet-name>pingServlet</servlet-name>
         <url-pattern>/ping</url-pattern>
     </servlet-mapping>
-    
+
+    <!-- Data servlet, for demonstrating GET/POST -->
     <servlet>
         <servlet-name>dataServlet</servlet-name>
         <servlet-class>servlets.DataServlet</servlet-class>
@@ -33,6 +41,7 @@
         <url-pattern>/data</url-pattern>
     </servlet-mapping>
 
+    <!-- Super Servlet further servlet demonstration -->
     <servlet>
         <servlet-name>superServlet</servlet-name>
         <servlet-class>servlets.SuperServlet</servlet-class>
@@ -40,6 +49,42 @@
     <servlet-mapping>
         <servlet-name>superServlet</servlet-name>
         <url-pattern>/super</url-pattern>
+    </servlet-mapping>
+
+    <!-- Problem servlet, causes exceptions and problems to be handled by error handling -->
+    <servlet>
+        <servlet-name>problemServlet</servlet-name>
+        <servlet-class>servlets.ProblemServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>problemServlet</servlet-name>
+        <url-pattern>/problem</url-pattern>
+    </servlet-mapping>
+
+    <!--
+        These are for handling errors. They map some problem to a mapping, which maps to a servlet just like above
+    -->
+    <!-- Any time the servlet container would generate a 404 error, it instead invokes the error handler servlet-->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/errorHandler</location>
+    </error-page>
+
+    <!-- Any time a servlet throws a CustomException (which extends ServletException) it invokes the error handler servlet -->
+    <error-page>
+        <exception-type>exceptions.CustomException</exception-type>
+        <location>/errorHandler</location>
+    </error-page>
+
+    <!-- Here is the mapping. Note it is exactly like the others, a location/path is mapped to a servlet name, which is
+     mapped to a servlet class-->
+    <servlet>
+        <servlet-name>errorHandler</servlet-name>
+        <servlet-class>servlets.ErrorHandlerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>errorHandler</servlet-name>
+        <url-pattern>/errorHandler</url-pattern>
     </servlet-mapping>
 
 </web-app>

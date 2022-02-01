@@ -72,7 +72,7 @@ public class SuperServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //set headers
-        resp.setHeader("Content-Type", "application/json");
+        resp.setHeader("Content-Type", "application/json");//note that this is the same as using setContentType()
         resp.setHeader("Kyle-Fav-Color", "Blue");
         resp.setHeader("Kyle-Fashion-Season", "Winter");
 
