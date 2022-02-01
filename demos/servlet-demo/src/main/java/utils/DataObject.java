@@ -31,4 +31,14 @@ public class DataObject {
     public void setBool(boolean bool) {
         this.bool = bool;
     }
+
+
+    @Override
+    public String toString() {
+        return "{" +
+                "\"num\":" + num +
+                ", \"str\":\"" + str + '\"' +
+                ", \"bool\":" + bool +
+                '}';
+    }
 }

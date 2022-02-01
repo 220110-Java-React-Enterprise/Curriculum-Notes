@@ -33,4 +33,13 @@
         <url-pattern>/data</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>superServlet</servlet-name>
+        <servlet-class>servlets.SuperServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>superServlet</servlet-name>
+        <url-pattern>/super</url-pattern>
+    </servlet-mapping>
+
 </web-app>
