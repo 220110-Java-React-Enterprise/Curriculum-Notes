@@ -7,6 +7,7 @@
  - [Consuming APIs from Java](./misc/consuming-api.md)
  - [Jackson Library](./misc/jackson.md)
  - [JSON](./misc/intro-to-json.md)
+ - [Session Management](./web%20services/session-management.md)
 
 ## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
@@ -63,6 +64,7 @@
  - [Intro to Servlets](./web%20services/intro-to-servlets.md)
  - [Servlet Config](./web%20services/servlet-config.md)
  - [Using Servlets](./web%20services/using-servlets.md)
+ - [Session Management](./web%20services/session-management.md)
 
 ## Misc
  - [Dependency Injection (Spring)](./spring/spring-di.md)
