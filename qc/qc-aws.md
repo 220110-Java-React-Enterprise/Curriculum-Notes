@@ -1,0 +1,31 @@
+# QC Questions on AWS Services
+
+- How would you describe AWS? What is "the cloud" or "cloud computing" and why is it so popular now?
+ - Define Infrastructure, Platform, and Software as a Service
+ - What's the difference between a Region and an Availability Zone (AZ)?
+ - How are you charged for using AWS services? Does it vary by service?
+ - Different ways to interact with AWS services?
+ - What are the configuration options for EC2?
+ - What are the different EC2 instance sizes/types?
+ - Once you create an EC2, how to connect to it?
+ - What are Security Groups? When defining a rule for a security group, what 3 things do you need to specify?
+ - What's the difference between scalability, elasticity, and resiliency?
+ - What is autoscaling?
+ - Ways of paying for EC2?
+ - What's an RDS?
+ - Which vendors are supported?
+ - What kind of data would you store on S3 vs a database?
+ - Are there any limits on S3?
+ - What are the rules for bucket naming?
+ - What are the different storage tiers?
+ - How does security work with S3?
+ - Can you use S3 to host a front-end or back-end of an application?
+ - How does elastic beanstalk work?
+ - What do we mean by saying Lambda is serverless?
+ - Advantages / disadvantages of serverless?
+ - What languages does Lambda support?
+ - What is the pricing model for lambda?
+ - What AWS service is an "Infrastructure as Code" tool?
+ - What are some benefits of Infrastructure as Code?
+ - Explain the following sections in a CloudFormation template
+ - What is the difference between a resource and a Stack?

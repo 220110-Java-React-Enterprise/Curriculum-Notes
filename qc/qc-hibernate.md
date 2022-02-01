@@ -1,0 +1,90 @@
+# QC Questions on Hibernate
+
+ - What is an ORM?
+   - Object Relational Mapper - translates data between two separate and incompatible structures, that is, relational database schema and object-oriented memory. Basically abstracts us away from SQL when handling persistence.
+ - What are Hibernate and JPA?
+   - JPA, Java Persistence API, is a standard describing how to handle persistence in Java. Hibernate is an implementation of this standard, and abstracts us away from the SQL and JDBC code.
+ - What is the benefit of using Hibernate over JDBC? 
+   - Hibernate is database agnostic.
+   - Hibernate provides abstraction, and handles many common workflows.
+   - Hibernate implements a caching strategy and other optimizations.
+   - No need to write any SQL
+ - What are the major classes / interfaces of Hibernate? 
+   - Configuration, SessionFactory, Session, CriteriaBuilder, Query, Root, Transaction, etc.
+ - Tell me how you set up / configure hibernate? What about setting up entity mapping? What files are you editing, what goes in them, etc. 
+   - Class config - options describing how to persist this object in relational database
+     - Annotate model classes to set up entities. @Entity, @Table, @Column, @OneToMany, etc...
+     - Or use a .hbm.xml file to describe the  persistence attributes of a model class
+   - Persistence Config - options about how hibernate should run
+     - hibernate.cfg.xml - XML that describes hibernate settings as elements and attributes.
+     - hibernate.properties - list the config options in key/value pairs.
+     - Programatically - where we invoke methods on the Configuration object to set specific properties.
+ - Tell me about some of the JPA annotations you have worked with? What do they do? 
+   - @Id - marks a field as the PK
+   - @Column - marks a field as one which should be persisted in a table
+   - @GeneratedValue(incl. options) - indicates the column is auto generated, like a sequence
+   - @JoinColumn/@JoinTable - indicates a column (or junction table) is used to establish a FK/PK relation
+   - @Entity - marks a class as one whose objects will be persisted
+   - @Table - similar to above, with options to describe the table
+ - How do you specify multiplicity relationships with JPA annotations? 
+   - @OneToOne
+   - @OneToMany
+   - @ManyToMany
+   - @ManyToOne
+   - +@MappedBy, @JoinColumn, @JoinTable, etc. as needed.
+ - In the session interface, what is the difference between... 
+   - Save and persist methods? 
+     - save() tells hibernate to add the data to the database
+     - persist() tells hibernate to store this object in it's cache, which will be saved to the database on next flush
+   - Get vs load methods? 
+     - get() returns null if not found. Get is eager
+     - load() throws ObjectNotFoundException if not found. Load is Lazy (a proxy object is returned until a method is invoked and then the proxy is fulfilled)
+   - Update vs merge methods? 
+     - Update() will throw an exception if there is already a persistent object of that type with that ID.
+     - merge() will merge changes into the already existing object if found, otherwise persists just like update().
+ - What is the difference between Eager and Lazy fetching and how to setup either? 
+   - Eager fetches all of the objects from the database as soon as asked.
+   - Lazy will return a proxy, and will fill out that proxy at the last moment. Lazy might never fulfil the proxy, if the object was never needed at runtime.
+ - Under what circumstances would your program throw a LazyInitializationException? 
+   - When a lazy fetch is done and returns proxies to be later fulfilled, but then the session becomes invalid (closes) before those proxies get fulfilled.
+ - What are the different ways to make a query using Hibernate? 
+   - Session object has methods like save() and get()
+   - Criteria Query Builder builds a query without any SQL-like script
+   - HQL write query with a SQL-like language called hibernate query language
+   - Native Sql write a query with SQL (specific to the database engine)
+ - What is HQL? What makes it different from SQL? 
+   - HQL is hibernate query language and it is a simplified query language that hibernate can use with any SQL database engine
+ - What is the Criteria API? Can you perform all DDL and DML commands with it?
+   - A way of writing queries using java methods instead of SQL or SQL-like script. You can only preform some SQL commands with criteria, DQL and DML are possible. DDL isn't.
+ - What is caching? 
+   - Caching is the process of storing recently used data in order to reduce the number of calls to the database.
+ - What is the difference between L1 and L2 cache? 
+   - L1 cache exists with the hibernate session and is not shared among threads. L2 cache is shared betwee threads and exists beyond a single session.
+ - How do you enable second level caching? 
+   - Apply a setting either in xml file, properties file, or programatically: `hibernate.cache.use_second_level_cache=true`
+ - Tell me about NamedQueries. 
+   - Named queries are staticly defined HQL scripts, validated by the sessionfactory and invoked by name. Can be thought of as being like a stored procedure in SQL.
+ - Can you write native SQL with Hibernate? Is this a good idea? 
+   - Yes, you can write native SQL, but this would then require major refactoring if your database engine changes. 
+ - How to specify the SQL dialect? 
+   - Specify in the property `hibernate.dialect` and set it to an approporiate dialect based on database engine. For instance: "org.hibernate.dialect.MariaDB103Dialect"
+ - What data must be specified for the SessionFactory? 
+   - We need a Configuration object, our mappings (annotated classes or xml map files), and our config settings.
+ - What is hbm2ddl (.auto?)? 
+   - This is the configuration setting that defines hibernate's behavior for creating/updating/dropping schema when the session is built.
+ - How would you configure Hibernate to print to the console all SQL statements run? 
+   - Specify the property `hibernate.show_sql` and set it to true.
+ - What are the different object states in Hibernate?
+   - Transient - object is created but not yet persisted (associated with the session)
+   - Persistent - object is associated with the session, any changes made to either the object or the database will be tralated across that boundary when the cache flushes.
+   - Detatched - session becomes closed and objects persisted (associaed with the session) are detatched.
+ - What methods move objects to different states? 
+   - .save(), .persist(), .merge(), .update(), .saveOrUpdate(), .get(), .load()
+ - What is a proxy? When does the proxy resolve to the real object? 
+   - A facade class wrapped around the actual object which takes it's place until hibernate retrieves the corecponding data from the database during lazy retrieval. This is conceptually similar to a promise in javascript.
+ - What is the difference between Dynamic Insert and Dynamic Update? 
+   - When hibernate creates SQL to execute it leaves unspecified fields null in the case of insert and ignored in the case of update. It only modifies those with given data, and leaves the rest out.
+ - What is automatic dirty checking?
+   - This is the process by which hibernate notices changes to persistent objects and saves those changes to the database upon cache flush.
+ - What is Transactional Write Behind? 
+   - This is the strategy by which hibernate defers the flushing of cache until the last possible moment, usually when a transaction is committed. (Also when flush() is called)

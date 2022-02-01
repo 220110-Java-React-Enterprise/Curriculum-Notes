@@ -1,0 +1,48 @@
+# QC Questions on SQL
+
+- What is a relational database?
+ - Name some common RDBMS platforms/vendors
+ - What is SQL?
+ - What are the sub-languages of SQL?
+ - What keywords are associated with DML?
+ - What keywords are associated with DDL?
+ - What keywords are associated with DCL?
+ - What keywords are associated with TCL?
+ - What keywords are associated with DQL?
+ - What is a result set?
+ - What is normalization?
+ - What are the normal forms, and to what level do we usually comply to?
+ - What is multiplicity?
+ - What is a primary key?
+ - What is a natural key?
+ - What is surrogate key?
+ - What is a composite key?
+ - What is a foreign key?
+ - What is referential integrity?
+ - What is the difference between a scalar and an aggregate function?
+ - What is a subquery?
+ - What is the difference between a union and a join?
+ - Under what circumstances can two result sets be unioned?
+ - What sorts of joins exist in SQL?
+ - What is a transaction?
+ - What are the properties of a transaction?
+ - What are the transaction isolation levels?
+ - What is a dirty-read? What isolation level(s) resolve this phenonmenon?
+ - What is a phantom-read? What isolation level(s) resolve this phenonmenon?
+ - What is a non-repeatable read? What isolation level(s) resolve this phenonmenon?
+ - Is SQL considered a procedural, declarative, or functional language?
+ - How can you select all of the entries in a table (ex: Users) including all columns?
+ - What is a WHERE clause used for?
+ - How can you sort the entries in your result set by a particular column?
+ - What is the purpose of the GROUP BY clause?
+ - What are some examples of scalar functions?
+ - What are some examples of aggregate functions?
+ - What is a self-join? Provide an example of when you might use one
+ - What is JDBC?
+ - What are the core classes and interfaces found in the JDBC API?
+ - Explain how you would connect your Java application to a database using JDBC.
+ - What is the difference between a Statement and PreparedStatement?
+ - Are DML statements in JDBC automatically committed? Is this a problem?
+ - When would you use a CallableStatement?
+ - What is SQL injection?
+ - Why is it recommended to use a PreparedStatement over a Statement?

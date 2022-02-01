@@ -1,0 +1,30 @@
+# QC Questions on DevOps
+
+ - What is DevOps?
+   - A combination of Development and Operations, is a set of practices and methodologies designed to combine the development, deployment, and maintenance of code into a streamlined process.
+ - What is the goal of various DevOps processes? 
+   - To expadite parts of the SDLC with automation in order to deliver greater, quicker, and more useful feedback for the development process.
+ - Explain CI/CD. What is the difference between Continuous Deployment and Continuous Delivery?
+   - CI/CD is the goal of creating an autonomous pipeline to integrate and deliver software.
+   - CI is the part of this process involving the frequent merging of code into a central repository and automating testing and feedback.
+   - CD, Continuous Deployment, is the part of that pipeline that does the remaining testing and delivers the compiled software to stakeholders.
+   - Continuous Delivery (not CD!) is every automated step of the above process, except that software is not deployed to end users automatically. Continuous delivery gurantees that the software is ready for deploment at any time.
+ - What tools have you used to achieve CI/CD? Explain how you’ve setup and used them.
+   - AWS CodeBuild, CodePipeline, S3, Elastic Beanstalk, Git, JUnit, Mockito...
+   - The testing libraries are used for automated testing during CI
+   - Git used to merge codebases and kick off the pipeline
+   - AWS Services used for the automated pipeline that builds, tests, delivers, and deploys our software.
+ - What is a DevOps pipeline? Explain the steps to setting one up
+   - A DevOps pipeline automates the process of merging, building, testing, deliverring, and deploying software in order to streamline the process of getting useful feedback.
+ - What is SonarQube / SonarCloud? Explain some of the features of it 
+   - Code analytic tools used to identify problems (sometimes called "code smells") in our code.
+   - **we will get into greater detail next week**
+ - What is a “build”? What is the end result of a build? What is the build tool you’ve used for Java projects? 
+   - A build is the compiling of your code.
+   - Maven is the tool we have been using to build our code.
+   - The result of a build is software, sometimes the binary objects created are called artifacts.
+ - What are the Maven lifecycles? List the steps in the build lifecycle 
+   - default, clean, site
+   - build lifecycle phases: Validate, Compile, Test, Package, Integration, Verify, Install, and Deploy 
+ - How does DevOps support the Agile development methodology?
+   - By streamlining the process of giving feedback to development, which allows developers to adapt quickly to changing needs.

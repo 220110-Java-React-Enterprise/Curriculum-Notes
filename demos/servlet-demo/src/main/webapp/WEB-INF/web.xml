@@ -14,7 +14,7 @@
     <listener>
         <listener-class>servlets.DependencyLoaderListener</listener-class>
     </listener>
-    
+
     <servlet>
         <servlet-name>pingServlet</servlet-name>
         <servlet-class>servlets.PingServlet</servlet-class>

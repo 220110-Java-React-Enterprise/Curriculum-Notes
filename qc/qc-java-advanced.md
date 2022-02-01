@@ -1,0 +1,70 @@
+# QC Questions on Advanced Java
+
+ - What are static imports?
+ - Does Java employ "pass-by-value" or "pass-by-reference"?
+ - What are short-circuit boolean operators?
+ - What is the String Pool?
+ - What is the difference between String, StringBuilder, and StringBuffer?
+ - Are Java Strings thread-safe? Why?
+ - How can a String be created outside of the String Pool?
+ - What is string interning?
+ - What causes a NullPointerException?
+ - What is reflection?
+ - Why do abstract classes have constructors?
+ - What modifying keywords are implicitly applied to variable members declared within an interface?
+ - What are functional interfaces?
+ - What are marker interfaces?
+ - What are annotations used for in Java?
+ - What are default interface methods?
+ - Describe the core interface/class hierarchy of the Java Collections API
+ - What is the difference between a List and a Set?
+ - What are the characteristics of a Queue?
+ - What are the characteristics of a Stack?
+ - What is a Map? Are they considered to be a part of the Java Collection API?
+ - When would you use an ArrayList over a LinkedList?
+ - When would you use an ArrayList over a Vector?
+ - What is the difference between a HashSet and a TreeSet?
+ - What is the difference between a Queue and a Deque?
+ - What is the difference between a HashMap and a Hashtable?
+ - Why is the main method declared static in Java?
+ - Does the logic in a static block member of a class run before or after the class's constructor logic is called?
+ - What is a thread in Java?
+ - How can you create a thread in Java?
+ - What are the states of a thread?
+ - What is the difference between the .run() and .start() methods?
+ - What is the keyword "synchronized" used for?
+ - What causes a deadlock?
+ - What is the function of the .join() method?
+ - Describe the characteristics and application of the singleton design pattern
+ - Describe the characteristics and application of the factory design pattern
+ - What is a lambda expression?
+ - What are the differences between a lambda expression and a local anonymous class?
+ - Are lambda expressions replacements to local anonymous classes?
+ - What is a functional interface?
+ - Is the @FunctionalInterface annotation required to denote a functional interface?
+ - What are some examples of functional interfaces?
+ - What are method references? Describe their syntax.
+ - What kinds of methods can be references using method references?
+ - What is a default method, and why should you use them?
+ - When was the java.util.function package introduced?
+ - What are the main types of functional interfaces?
+ - What is the method signature of the abstract method in the Supplier interface?
+ - What is the method signature of the abstract method in the Consumer interface?
+ - How would you go about composing/combining multiple Consumers together?
+ - What is the method signature of the abstract method in the Predicate interface?
+ - What are the default methods of the Predicate interface?
+ - What is the method signature of the abstract method in the Function interface?
+ - What is a BiFunction?
+ - When should you use IntSupplier versus Supplier<Integer>?
+ - What is a Stream and how is it different than a Collection?
+ - What are intermediate Stream operations? Name a few.
+ - What are terminal Stream operations? Name a few.
+ - What is the function of Stream#map, what does it take as a parameter?
+ - What is the function of Stream#filter, what does it take as a parameter?
+ - What is the function of Stream#reduce, what does it take as a parameter?
+ - What is the function of Stream#flatMap, what does it take as a parameter?
+ - Articulate the difference between Stream#map and Stream#flatMap.
+ - Do Stream operations manipulate the collection being streamed?
+ - How can you convert an array into a Stream?
+ - What is an Optional?
+ - What are some ways of making Optional objects, since its constructor is declared as private?
