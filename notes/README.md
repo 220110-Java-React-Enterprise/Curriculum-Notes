@@ -1,13 +1,11 @@
 # Notes
-### Newest:
- - [Intro to Hibernate & ORMs](./misc/hibernate.md)
- - [Intro to Servlets](./web%20services/intro-to-servlets.md)
- - [Servlet Config](./web%20services/servlet-config.md)
- - [Using Servlets](./web%20services/using-servlets.md)
- - [Consuming APIs from Java](./misc/consuming-api.md)
- - [Jackson Library](./misc/jackson.md)
- - [JSON](./misc/intro-to-json.md)
- - [Session Management](./web%20services/session-management.md)
+### Newest Topics:
+ - Hibernate & ORMs
+ - Servlets
+ - Jackson
+ - JSON
+ - DevOps
+ - AWS
 
 ## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
@@ -71,8 +69,7 @@
  - [DevOps And Agile](./devops/devops-and-agile.md)
  - [Continuous Integration](./devops/continuous-integration.md)
  - [Continuous Delivery and Deployment](./devops/continuous-delivery-deployment.md)
- - [Docker Abridged](./devops/docker-abridged.md)
-   - [Docker](./devops/docker.md)
+ - [Docker](./devops/docker.md)
    - [Docker Containers](./devops/docker-containers.md)
    - [Docker Workflow](./devops/docker-workflow.md)
    - [Docker Cheatsheet](./devops/docker-cheatsheet.md)
