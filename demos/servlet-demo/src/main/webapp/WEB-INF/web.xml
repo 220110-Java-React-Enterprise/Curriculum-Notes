@@ -61,6 +61,16 @@
         <url-pattern>/problem</url-pattern>
     </servlet-mapping>
 
+    <!-- This is a collection servlet for showing how to marshall collections of objects to JSON -->
+    <servlet>
+        <servlet-name>collectionServlet</servlet-name>
+        <servlet-class>servlets.CollectionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>collectionServlet</servlet-name>
+        <url-pattern>/collection</url-pattern>
+    </servlet-mapping>
+
     <!--
         These are for handling errors. They map some problem to a mapping, which maps to a servlet just like above
     -->
