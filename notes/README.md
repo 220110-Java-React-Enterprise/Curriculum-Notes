@@ -66,6 +66,31 @@
  - [Using Servlets](./web%20services/using-servlets.md)
  - [Session Management](./web%20services/session-management.md)
 
+## DevOps
+ - [DevOps Overview](./devops/devops-overview.md)
+ - [DevOps And Agile](./devops/devops-and-agile.md)
+ - [Continuous Integration](./devops/continuous-integration.md)
+ - [Continuous Delivery and Deployment](./devops/continuous-delivery-deployment.md)
+ - [Docker Abridged](./devops/docker-abridged.md)
+   - [Docker](./devops/docker.md)
+   - [Docker Containers](./devops/docker-containers.md)
+   - [Docker Workflow](./devops/docker-workflow.md)
+   - [Docker Cheatsheet](./devops/docker-cheatsheet.md)
+
+
+## Amazon Web Services
+ - [AWS Overview](./aws/intro-aws.md)
+ - [RDS](./aws/rds.md)
+ - [EC2](./aws/ec2.md)
+ - [S3](./aws/aws-s3.md)
+ - [EBS](./aws/ebs.md)
+ - [IAM & Security](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+ - [CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html)
+ - [CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html)
+ - [Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
+ - [Cloud Watch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+
+
 ## Misc
  - [Dependency Injection (Spring)](./spring/spring-di.md)
  - [Git & GitHub Basics](./misc/intro-git.md)
