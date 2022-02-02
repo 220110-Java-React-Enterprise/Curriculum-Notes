@@ -81,8 +81,7 @@ public class ErrorHandlerServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("ErrorHandlerServlet caught a ServletException...");
-        resp.setStatus(555);//just to test, this number is meaningless
+        resp.setStatus(500);
         resp.getWriter().write("ErrorHandlerServlet caught a ServletException.");
-
     }
 }

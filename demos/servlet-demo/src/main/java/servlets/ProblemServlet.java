@@ -11,8 +11,8 @@ import java.io.IOException;
 public class ProblemServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        resp.setStatus(501);
-        System.out.println("Error 501 generated");
+        resp.setStatus(404);
+        System.out.println("Error 404 generated");
     }
 
     @Override
