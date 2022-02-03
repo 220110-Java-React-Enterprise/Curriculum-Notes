@@ -6,6 +6,7 @@
  - JSON
  - DevOps
  - AWS
+ - Git Branching Strategy
 
 ## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
