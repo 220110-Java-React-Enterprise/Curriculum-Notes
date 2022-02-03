@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  post_build:
+    commands:
+      - mvn package
+      - mv target/devops-demo-0.1.war ROOT.war
+artifacts:
+  files:
+    - ROOT.war
+    - .ebextensions/**/*

@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "64c30546-4afb-45b7-9895-68db144801fc",
+		"name": "Servlets Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Super Fact Finding Test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "\"Text/Plain\"",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/super?param1=one million!&param2=5&param3=test,test2,test3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"super"
+					],
+					"query": [
+						{
+							"key": "param1",
+							"value": "one million!"
+						},
+						{
+							"key": "param2",
+							"value": "5"
+						},
+						{
+							"key": "param3",
+							"value": "test,test2,test3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post the object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":5,\r\n    \"str\": \"hello!\",\r\n    \"bool\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get the object",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":5,\r\n    \"str\": \"hello!\",\r\n    \"bool\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post the super object",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":5,\r\n    \"str\": \"hello!\",\r\n    \"bool\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/super?param1=one million!&param2=5&param3=test,test2,test3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"super"
+					],
+					"query": [
+						{
+							"key": "param1",
+							"value": "one million!"
+						},
+						{
+							"key": "param2",
+							"value": "5"
+						},
+						{
+							"key": "param3",
+							"value": "test,test2,test3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get the super object Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":5,\r\n    \"str\": \"hello!\",\r\n    \"bool\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/super?param1=one million!&param2=5&param3=test,test2,test3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"super"
+					],
+					"query": [
+						{
+							"key": "param1",
+							"value": "one million!"
+						},
+						{
+							"key": "param2",
+							"value": "5"
+						},
+						{
+							"key": "param3",
+							"value": "test,test2,test3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cause a 555 error",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":5,\r\n    \"str\": \"hello!\",\r\n    \"bool\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/problem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"problem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cause a ServletException",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":5,\r\n    \"str\": \"hello!\",\r\n    \"bool\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/problem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"problem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all the objects",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"num\":5,\r\n    \"str\": \"hello!\",\r\n    \"bool\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/servlet-demo/data",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"servlet-demo",
+						"data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
