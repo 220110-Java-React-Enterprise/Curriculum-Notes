@@ -21,20 +21,19 @@ public class FileLogger {
 
 
     private FileLogger() {
-        //add implementation later
-        filePath = "src/main/resources/logs/";
+        filePath = "logs/";
         consoleOutput = false;
         stackTraceSize = 10;
     }
 
-    public FileLogger getFileLogger() {
+    public static FileLogger getFileLogger() {
         if(fileLogger == null) {
             fileLogger = new FileLogger();
         }
         return fileLogger;
     }
 
-    public FileLogger getFileLogger(String path) {
+    public static FileLogger getFileLogger(String path) {
         if(fileLogger == null) {
             fileLogger = new FileLogger();
         }
@@ -43,21 +42,23 @@ public class FileLogger {
     }
 
 
-    public static void log(Exception e) {
+    public void log(Exception e) {
         StringBuilder sb = new StringBuilder();
         sb.append(fileLogger.getTimestamp())
                 .append(" - ")
                 .append(e.getMessage())
                 .append("\n")
-                .append(fileLogger.formatStackTrace(e));
+                .append(fileLogger.formatStackTrace(e))
+                .append("\n");
         fileLogger.writeToLog(sb.toString());
     }
 
-    public static void log(String str) {
+    public void log(String str) {
         StringBuilder sb = new StringBuilder();
         sb.append(fileLogger.getTimestamp())
                 .append(" - ")
-                .append(str);
+                .append(str)
+                .append("\n");
         fileLogger.writeToLog(sb.toString());
     }
 
@@ -73,7 +74,10 @@ public class FileLogger {
     private String formatStackTrace(Exception e) {
         StackTraceElement[] stackTrace = e.getStackTrace();
         StringBuilder sb = new StringBuilder();
-        for(int i = 2; i < 2 + stackTraceSize; i++) {
+        for(int i = 0; i < stackTraceSize; i++) {
+            if(i >= stackTrace.length) {
+                break;
+            }
             sb.append("\t");
             sb.append(stackTrace[i]);
             sb.append("\n");
@@ -86,6 +90,7 @@ public class FileLogger {
         try(Writer fileWriter = new FileWriter(fileName, true)) {
             fileWriter.write(text);
         } catch (Exception e) {
+            e.printStackTrace();
             //TODO - figure out what to do if the excepton lgger throws an exception
         }
 

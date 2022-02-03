@@ -1,0 +1,12 @@
+2022-02-03 13:41:55 - This is our message!
+2022-02-03 13:41:55 - Three methods deep
+	Main.methodOne(Main.java:10)
+	Main.main(Main.java:6)
+
+2022-02-03 13:43:18 - This is our message!
+2022-02-03 13:43:18 - Three methods deep
+	Main.methodThree(Main.java:18)
+	Main.methodTwo(Main.java:14)
+	Main.methodOne(Main.java:10)
+	Main.main(Main.java:6)
+
