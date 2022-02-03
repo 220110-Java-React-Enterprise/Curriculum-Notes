@@ -91,6 +91,7 @@
 ## Misc
  - [Dependency Injection (Spring)](./spring/spring-di.md)
  - [Git & GitHub Basics](./misc/intro-git.md)
+ - [Git Branching Strategy](./misc/git-branching-strategy.md)
  - [Linux/Unix](./misc/unix-linux.md)
  - [Consuming APIs from Java](./misc/consuming-api.md)
  - [Jackson Library](./misc/jackson.md)
