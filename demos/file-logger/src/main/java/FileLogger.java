@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.Writer;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -59,9 +61,13 @@ public class FileLogger {
         fileLogger.writeToLog(sb.toString());
     }
 
-    private java.lang.String getTimestamp() {
+    private String getTimestamp() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("[yyyy-MM-dd HH:mm:ss]");
         return formatter.format(LocalDateTime.now());
+    }
+
+    private String getFileName() {
+        return filePath + LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")) + ".log";
     }
 
     private String formatStackTrace(Exception e) {
@@ -76,6 +82,12 @@ public class FileLogger {
     }
 
     private void writeToLog(String text){
+        String fileName = getFileName();
+        try(Writer fileWriter = new FileWriter(fileName, true)) {
+            fileWriter.write(text);
+        } catch (Exception e) {
+            //TODO - figure out what to do if the excepton lgger throws an exception
+        }
 
     }
 
