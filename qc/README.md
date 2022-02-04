@@ -10,7 +10,10 @@ You can focus your study here, but these are not exhaustive lists of all possibl
  - [HTTP](./qc-http.md)
  - [REST](./qc-rest.md)
  - [Servlets](./qc-servlets.md)
-
+ - [Junit](./qc-junit.md)
+ - [DevOps](./qc-devops.md)
+ - [AWS](./qc-aws.md)
+ - [Docker](./qc-docker.md)
 
 
 ### Keep the following in mind for QCs:
