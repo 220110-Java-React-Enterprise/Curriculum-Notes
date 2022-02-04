@@ -16,6 +16,7 @@ Welcome to Revature! Over the course of this curriculum we will prepare you to b
  - [Project 0 - Console Banking App](./project%20specs/project-0.md)
    - [Project 0 - CCG Collection Manager](./project%20specs/Jeffrey-Lor-P0.md)
  - [Project 1 - Small Teams - ORM/Web Service](./project%20specs/project-1.md)
+   - [P1 Overview](./project%20specs/p1-overview.pdf)
  - Project 2 - ~5 person groups, Full stack web site using 3rd party API
  - Project 3 - Full group, full stack applicaiton dictated by CoE stakeholders
 
