@@ -70,6 +70,7 @@
  - [DevOps And Agile](./devops/devops-and-agile.md)
  - [Continuous Integration](./devops/continuous-integration.md)
  - [Continuous Delivery and Deployment](./devops/continuous-delivery-deployment.md)
+ - [Infrastructure as Code](./devops/devops-iac.md)
  - [Docker](./devops/docker.md)
    - [Docker Containers](./devops/docker-containers.md)
    - [Docker Workflow](./devops/docker-workflow.md)
