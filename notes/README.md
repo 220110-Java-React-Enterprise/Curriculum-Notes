@@ -1,12 +1,7 @@
 # Notes
 ### Newest Topics:
- - Hibernate & ORMs
- - Servlets
- - Jackson
- - JSON
- - DevOps
- - AWS
- - Git Branching Strategy
+ - Spring
+ - REST
 
 ## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
