@@ -1,0 +1,63 @@
+Fundamentals 
+
+What is React? Is it a library or framework? What’s the difference between those? 
+
+What does it mean to be component-based? What does a component represent? 
+
+Tell me how you would start up a new React project? What does ‘create react app’ setup for you? 
+
+How would you create a component? 
+
+What are “props”? What is state? What data should be put in which? 
+
+What is the lifecycle of a component? 
+
+What is the difference between a functional and a class component? 
+
+What is the purpose of a container component? What about a higher-order component? 
+
+What is the virtual DOM? 
+
+What is routing and how would you do routing in React? 
+
+What is JSX? What does it compile into? How to include JS code in JSX? 
+
+How do you handle events in React? 
+
+Does React have 1-way or 2-way data binding and data flow? 
+
+If a parent component has data that a child component needs to access, what should you do? 
+
+If you have state in two child components that a parent component needs access to, what is a good solution for that? 
+
+How do you do conditional rendering? 
+
+What should you remember to include as a prop for lists of elements? 
+
+What are some pros/cons of using TypeScript in a React application? 
+
+Why is immutable state important? 
+
+How would you handle forms and submitting forms with React? 
+
+How do you recommend making an AJAX call in React? Which library have you used? Why not use fetch directly? 
+
+How do you test React components and code that you write? 
+
+What are some options for styling your React components? 
+
+What is SASS? How is it different from CSS? 
+
+Flux/Redux 
+
+What is the Flux design pattern? 
+
+What are actions? Reducers? Store? 
+
+Redux-Thunk 
+
+What is a ‘thunk’? What is redux-thunk used for? 
+
+Thunk is a function that wraps an expression to delay its evaluation 
+
+Used for delaying dispatch of an action or based on a condition 
