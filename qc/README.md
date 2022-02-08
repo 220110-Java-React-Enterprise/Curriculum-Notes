@@ -3,17 +3,36 @@ These files are full of questions you are likely to be asked as part of QC. You 
 
 ### QC Questions
 You can focus your study here, but these are not exhaustive lists of all possible questions.
+### Backend:
  - [OOP](./oop.md)
  - [Java Basics](./java-basics.md)
  - [Java Intermediate - Advanced](./java-advanced.md)
  - [SQL](./qc-sql.md)
+ - [Junit](./qc-junit.md)
+ - [Spring](./qc-spring.md)
+
+### Frontend:
+ - [HTML](./qc-html.md)
+ - [CSS](./qc-css.md)
+ - [JavaScript](./qc-javascript.md)
+ - [AJAX](./qc-ajax.md)
+
+### Web Services:
  - [HTTP](./qc-http.md)
  - [REST](./qc-rest.md)
  - [Servlets](./qc-servlets.md)
- - [Junit](./qc-junit.md)
+
+### SDLC and DevOps
+ - [Software Development Lifecycle](./qc-sdlc.md)
  - [DevOps](./qc-devops.md)
+ - [DevOps & Agile](./qc-sdlc-devops.md)
  - [AWS](./qc-aws.md)
  - [Docker](./qc-docker.md)
+
+### Stuff Not In Our Curriculum That You May Find Interesting:
+ - [MSA](./qc-msa.md)
+ - [Hibernate](./qc-hibernate.md)
+ - [Angular](./qc-angular.md)
 
 
 ### Keep the following in mind for QCs:
