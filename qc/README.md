@@ -15,6 +15,7 @@ You can focus your study here, but these are not exhaustive lists of all possibl
  - [HTML](./qc-html.md)
  - [CSS](./qc-css.md)
  - [JavaScript](./qc-javascript.md)
+ - [React & Redux](./qc-react-ak.md)
  - [AJAX](./qc-ajax.md)
 
 ### Web Services:
