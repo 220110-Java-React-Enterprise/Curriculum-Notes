@@ -1,9 +1,4 @@
-# JPA Interfaces
-
-This page details the Spring Data Java Persistence API (JPA) module and its central interfaces which provides default configurations for simple CRUD applications, as well as manual custom query support.
-
-
-## Spring Data JPA
+# Spring Data JPA
 At this point, we have already utilized the Data Access Object (DAO) Layer to handle communication of data between our application and our repository. This DAO layer usually consists of a lot of boilerplate code, and as such can and should be simplified. There are numerous reasons to simplfy this code, including a decrease in the number of artifacts that need to be defined and maintained, consistency of data access patters, consistency of configuration, and quicker implementation for updated repository data.
 
 The Spring Data module takes this simplification one step further by providing standard implementation for common DAO methods allowing for the removal of the DAO implementation and only requiring the definition of the DAO interface methods.
@@ -128,6 +123,8 @@ int getAvgPageCount();
 
 Natvie SQL query.
 
+
+# JPA Example
 
 Lets examine an example. First create a Spring project with the following dependencies:
 * Spring Data JPA
