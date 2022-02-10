@@ -30,7 +30,7 @@ You will also want to use the following key/value pairs:
 With this in place you should be able to run your spring application and have it launch successfully. However, it doesn't do much of anything yet.
 
 ### Domain Objects
-Before we can store anything in the database, we need things to store. Create one or more simple POJOs. Make sure to include a unique ID field. You may want to create several types of POJO class and have one hold a reference to another. This will cause Spring Data to establish a relation between the tables where theose objects are stored. Explore hacing one POJO hold a reference to another, and one POJO with a reference to a collection of another type of POJO. This will form one-to-one and one-to-many relationships respectively.  
+Before we can store anything in the database, we need things to store. Create one or more simple POJOs. Make sure to include a unique ID field. You may want to create several types of POJO class and have one hold a reference to another. This will cause Spring Data to establish a relation between the tables where theose objects are stored. Explore having one POJO hold a reference to another, and one POJO with a reference to a collection of another type of POJO. This will form one-to-one and one-to-many relationships respectively.  
   
 Make sure your POJOs have:
  - A public no-args constructor
@@ -39,3 +39,15 @@ Make sure your POJOs have:
  - public getters and setters for all fields.
 
 Note: The terms Model and Entity both refer to objects we want to persist in our database. The term POJO is a design pattern for a class that has only private fields and public setters and getters. a POJO is just a holder for data, and contains no other behaviors. In this lab, our POJOs are our Entities/Models. 
+
+Make sure to mark the POJO entities with the proper annotations:
+ - `@Entity` - marks a class as an entity
+ - `@Id` - marks a field as the primary key
+ - `@Column` - marks a field as a database column
+ - `@OneToOne` - marks one side of a one-to-one relation. It is not necessary to mark both sides.
+ - `@OneToMany` - marks one side of a one-to-many relation. It is not necessary to mark both sides.
+ - `@ManyToMany` - Marks one side of a many-to-many relation.
+Each of these annotations is from the `javax.persistence` package.
+
+### Persistence
+Now that we have objects to persist, we just need to add the logic that will persist these objects. Luckily, the most basic and common CRUD operations are already pre-built for us by Spring Data. All we need to do is create an interface that extends one of the JPA interfaces, like J
