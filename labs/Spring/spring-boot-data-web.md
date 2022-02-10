@@ -82,7 +82,7 @@ So this class is a bean and will be made aware of the IoC container, the context
   
 Now in main we can use this class and it's static getter method to get the context. Once we have the context we can call `context.getBean()`. We need to provide this method with one parameter, the type of the bean we are asking for. Hand it off like a class, for instance `context.getBean(AccountRepo.class)`. Once you have your repo beans you can invoke those repo methods that spring wrote for us. Try to create a few of your entity objects and call the `repo.save(entityObject)` method on it. Check the database and see your objects persisted there. Take a look at the ERD too, see how your tables were built.
 
-### Spring Web - WIP Kyle is still writing this lab. Refresh your browser and there will probably be more...
+### Spring Web
 Next we will be creating an API to expose our application's functionality to be consumed. We will create new types of beans called controllers, named for their place in the Model-View-Controller(MVC) pattern. Here in our curriculum we are more interested in building client-server applications that don't conform perfectly to the MVC pattern. Basically, we move the view part to the client, rather than having this logic on the server-side. Controllers abstract us away from the lower-level servlets, so while a controller is not the same thing as a servlet, you can consider that they fill a similar role in our application.  
   
 Create a new package for controllers under the beans package, so that Spring will scan it. Each controller should represent a resource, so just like servlets, we should have one for each entity. These controllers should expose CRUD functionality for each entity. Just like servlets, we will map HTTP methods to class methods and our controller will invoke the necessary logic elsewhere in our application. Create a controller in the new package for each entity. Mark the controllers with the proper annotations:
@@ -113,7 +113,7 @@ public class AccountController {
         this.userRepo = userRepo;
     }
 
-    @RequestMapping("/{userId}")
+    @RequestMapping(value = "/{userId}", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.ACCEPTED)
     public void newAccountForUser(@RequestBody Account account, @PathVariable Integer userId) throws UserNotFoundException {
         Optional<User> optionalUser = userRepo.findById(userId);
@@ -133,3 +133,12 @@ public class AccountController {
 Note:
  - The use of `Optional`. The CRUD methods that spring builds for us return Optionals, which are a facade class designed to avoid null checks.
  - The use of `@Autowired` to get us our Repository beans.
+ - In one `@RequestMapping` we just give part of the URI, but in the other we mark that as `value`. It's only necessary to mark the URI with `value` if there are going to be other attributes in the annotation, in this case `method` is also present.
+
+Use the annotations and the example above, as well as your notes, to complete the controllers. You should be able to cover all CRUD functionality for your domain objects.
+
+### Consume The API
+Test your controllers by building HTTP requests in postman that hit your endpoints. You can feel free to remove the logic we wrote in main to test persistence earlier. You should have the necessary logic for CRUD in your controllers, or perhaps in a service layer than your controllers invoke.
+
+### Conclusion
+Congratulations! At this point you (hopefully) have a fully functional Spring Boot application that can be used to persist domain objects by consuming an API. You should be able to take this project and layer more complexity onto it to produce your own applications.
