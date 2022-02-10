@@ -1,8 +1,10 @@
 package com.revature.springbootdemo.beans.controllers;
 
+import com.revature.springbootdemo.beans.entities.Account;
 import com.revature.springbootdemo.beans.entities.User;
 import com.revature.springbootdemo.beans.repositories.AccountRepo;
 import com.revature.springbootdemo.beans.repositories.UserRepo;
+import com.revature.springbootdemo.exceptions.AccountNotFoundException;
 import com.revature.springbootdemo.exceptions.UserNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -47,6 +49,14 @@ public class UserController {
     @RequestMapping(method = RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.OK)
     public void deleteUser(@RequestBody User user) {
+        Optional<User> optionalUser = userRepo.findById(user.getUserId());
+        optionalUser.ifPresent(value -> accountRepo.deleteAll(value.getAccounts())); //hey look, a lambda!
         userRepo.delete(user);
+    }
+
+    @ExceptionHandler({ AccountNotFoundException.class, UserNotFoundException.class })
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public void handleException() {
+        //log it?
     }
 }

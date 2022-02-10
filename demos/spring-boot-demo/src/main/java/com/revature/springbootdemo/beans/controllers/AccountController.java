@@ -32,14 +32,14 @@ public class AccountController {
         if(optionalUser.isPresent()) {
             User user = optionalUser.get();
             user.addAccount(account);
-            userRepo.save(user);
             accountRepo.save(account);
+            userRepo.save(user);
         } else {
             throw new UserNotFoundException("User not found!");
         }
     }
 
-    @RequestMapping()
+    @RequestMapping(method = RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public List<Account> getAllAccountsForUser(@PathVariable Integer userId) throws UserNotFoundException {
         Optional<User> optionalUser = userRepo.findById(userId);
@@ -84,11 +84,12 @@ public class AccountController {
         Optional<User> optionalUser = userRepo.findById(userId);
         if(optionalUser.isPresent()) {
             User user = optionalUser.get();
-            for (Account account : optionalUser.get().getAccounts()) {
+            for (Account account : user.getAccounts()) {
                 if(account.getAccountId().equals(accountId)) {
                     user.removeAccount(account);
-                    userRepo.save(user);
                     accountRepo.delete(account);
+                    userRepo.save(user);
+                    break;
                 }
             }
         } else {
