@@ -85,4 +85,13 @@ Now in main we can use this class and it's static getter method to get the conte
 ### Spring Web - WIP Kyle is still writing this lab. Refresh your browser and there will probably be more...
 Next we will be creating an API to expose our application's functionality to be consumed. We will create new types of beans called controllers, named for their place in the Model-View-Controller(MVC) pattern. Here in our curriculum we are more interested in building client-server applications that don't conform perfectly to the MVC pattern. Basically, we move the view part to the client, rather than having this logic on the server-side. Controllers abstract us away from the lower-level servlets, so while a controller is not the same thing as a servlet, you can consider that they fill a similar role in our application.  
   
-Create a new package for controllers under the beans package, so that Spring will scan it. Each controller should represent a resource, so just like servlets, we should have one for each entity. These controllers should expose CRUD functionality for each entity. Just like servlets, we will map HTTP methods to class methods and our controller will invoke the necessary logic elsewhere in our application.
+Create a new package for controllers under the beans package, so that Spring will scan it. Each controller should represent a resource, so just like servlets, we should have one for each entity. These controllers should expose CRUD functionality for each entity. Just like servlets, we will map HTTP methods to class methods and our controller will invoke the necessary logic elsewhere in our application. Create a controller in the new package for each entity. Mark the controllers with the proper annotations:
+
+ - `@Controller`
+ - `@RestController`
+ - `@RequestMapping`
+ - `@RequestBody`
+ - `@ResponseBody`
+ - `@PathVariable`
+ - `@RequestParameter`
+ - `@ResponseStatus`
