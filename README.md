@@ -17,6 +17,6 @@ Welcome to Revature! Over the course of this curriculum we will prepare you to b
    - [Project 0 - CCG Collection Manager](./project%20specs/Jeffrey-Lor-P0.md)
  - [Project 1 - Small Teams - ORM/Web Service](./project%20specs/project-1.md)
    - [P1 Considerations](./project%20specs/p1-overview.pdf)
- - [Project 2 - ~5 person groups, Full stack web site using 3rd party API](./project%20specs/P2-spec.md)
+ - [Project 2 - ~5 person groups, Full stack web site using 3rd party API](./project%20specs/project-2.md)
  - Project 3 - Full group, full stack applicaiton dictated by CoE stakeholders
 
