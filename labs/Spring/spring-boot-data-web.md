@@ -87,11 +87,11 @@ Next we will be creating an API to expose our application's functionality to be 
   
 Create a new package for controllers under the beans package, so that Spring will scan it. Each controller should represent a resource, so just like servlets, we should have one for each entity. These controllers should expose CRUD functionality for each entity. Just like servlets, we will map HTTP methods to class methods and our controller will invoke the necessary logic elsewhere in our application. Create a controller in the new package for each entity. Mark the controllers with the proper annotations:
 
- - `@Controller`
- - `@RestController`
- - `@RequestMapping`
- - `@RequestBody`
- - `@ResponseBody`
- - `@PathVariable`
- - `@RequestParameter`
- - `@ResponseStatus`
+ - `@Controller` - stereotype annotation that marks this as a controller bean
+ - `@RestController` - shortcut, this annotation implies both `@Controller` and `@ResponseBody`
+ - `@RequestMapping` - maps incoming HTTP requests to the controller class and methods
+ - `@RequestBody` - specifies that a parameter object should be marshalled from the http request body (using jackson to translate JSON)
+ - `@ResponseBody` - specifies taht the returned value should be marshalled as JSON and transmitted in the response body.
+ - `@PathVariable` - extract a token value from the URL
+ - `@RequestParameter` - fetch value by key from URL parameter list
+ - `@ResponseStatus` - Set a status for a successful request/response
