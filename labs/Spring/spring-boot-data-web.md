@@ -89,9 +89,46 @@ Create a new package for controllers under the beans package, so that Spring wil
 
  - `@Controller` - stereotype annotation that marks this as a controller bean
  - `@RestController` - shortcut, this annotation implies both `@Controller` and `@ResponseBody`
- - `@RequestMapping` - maps incoming HTTP requests to the controller class and methods
+ - `@RequestMapping` - maps incoming HTTP requests to the controller class and methods. Can also specify the method and/or content-type.
  - `@RequestBody` - specifies that a parameter object should be marshalled from the http request body (using jackson to translate JSON)
  - `@ResponseBody` - specifies taht the returned value should be marshalled as JSON and transmitted in the response body.
  - `@PathVariable` - extract a token value from the URL
  - `@RequestParameter` - fetch value by key from URL parameter list
  - `@ResponseStatus` - Set a status for a successful request/response
+
+Remember that some of these annotations can be applied to classes or methods. For instance, `@RequestMapping` when applied to the class sets the URL path that leads to that controller. Applying `@RequestMapping` to a method then specifies the URL path that leads to that method. So, if you marked your class with `"/accounts"` and a method with `"/getAccountByUserId"` then the path that leads to that method would be like `"something.com/contextpath/accounts/getAccountByUserId"`  
+  
+A basic restful controller that is invoked by a POST request sent to `"something.com/contextpath/accounts/213"` with a JSON representation of an Account object in the body might look like the below controller. This controller method creates a new resource from the JSON body and stores it in the database tied to User with the ID of 213.
+
+```Java
+@RestController
+@RequestMapping("/accounts")
+public class AccountController {
+    private final AccountRepo accountRepo;
+    private final UserRepo userRepo;
+
+    @Autowired //spring provides our repos by autowiring them into this constructor
+    public AccountController(AccountRepo accountRepo, UserRepo userRepo) {
+        this.accountRepo = accountRepo;
+        this.userRepo = userRepo;
+    }
+
+    @RequestMapping("/{userId}")
+    @ResponseStatus(HttpStatus.ACCEPTED)
+    public void newAccountForUser(@RequestBody Account account, @PathVariable Integer userId) throws UserNotFoundException {
+        Optional<User> optionalUser = userRepo.findById(userId);
+        if(optionalUser.isPresent()) {
+            User user = optionalUser.get();
+            user.addAccount(account);
+            userRepo.save(user);
+            accountRepo.save(account);
+        } else {
+            throw new UserNotFoundException("User not found!");
+        }
+    }
+}
+```
+
+Note:
+ - The use of `Optional`. The CRUD methods that spring builds for us return Optionals, which are a facade class designed to avoid null checks.
+ - The use of `@Autowired` to get us our Repository beans.
