@@ -30,6 +30,7 @@ public class UserController {
         userRepo.save(user);
     }
 
+
     @RequestMapping(value = "/{userId}")
     public User getUserById(@PathVariable Integer userId) throws UserNotFoundException {
         Optional<User> optionalUser = userRepo.findById(userId);
