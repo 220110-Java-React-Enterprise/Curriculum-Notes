@@ -75,6 +75,7 @@
  - [Spring Annotations](./spring/spring-annotations.md)
  - [Spring AOP](./spring/spring-aop.md)
  - [Spring Tools](./spring/spring-tools.md)
+ - [Rest Template](./spring/rest-template.md)
 
 
 ## Web Services
