@@ -12,7 +12,7 @@ Aspect Oriented Programming is another way to think about structuring your progr
 * _Introduction_ - Declaration of new interfaces and corresponding implementations in subclasses of any advised object. Introductions use the `@DeclareParents` annotation with the _defaultImpl_ attribute to define a default concrete class for the bean definition. For Example:
 
 __IFunction Interface__:
-```
+```java
 package com.revature.examples;
 
 public interface IFunctional {
@@ -21,7 +21,7 @@ public interface IFunctional {
 ```
 
 __FunctionalDefault__:
-```
+```java
 package com.revature.examples;
 
 public class FunctionalDefault implements IFunctional {
@@ -32,7 +32,7 @@ public class FunctionalDefault implements IFunctional {
 ```
 
 __Aspect__:
-```
+```java
 package com.revature.examples;
 
 import org.aspectj.lang.annotation.Aspect;
@@ -66,7 +66,7 @@ To utilize `@AspectJ` aspects in a Spring configuration, you need to enable supp
 `@AspectJ` configurations can be enabled using either XML or Java-based Spring configuration. In either case, you will need to make sure that the AspectJ _aspectweaver.jar_ is on your application's classpath (version 1.6.8 or later is required for Spring 4.0.x). 
 
 This can be done by adding the following dependency within your Maven Pom file:
-```
+```xml
 <dependency>
 	<groupId>org.aspectj</groupId>
 	<artifactId>aspectjweaver</artifactId>
@@ -76,7 +76,7 @@ This can be done by adding the following dependency within your Maven Pom file:
 ```
 
 For XML based configurations you must use the `aop:aspectj-autoproxy` element:
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -94,7 +94,7 @@ For XML based configurations you must use the `aop:aspectj-autoproxy` element:
 ```
 
 For Java based configurations, AspectJ is supported through the use of the `@EnableAspectJAutoProxy` annotation within your `@Configuration` annotated class:
-```
+```java
 @Configuration
 @EnableAspectJAutoProxy
 public class AppConfig {
@@ -204,7 +204,7 @@ All of these annotations, including the `@Aspect` annotation must be imported fr
 
 ### Before
 _Before_ advice is declared using the `@Before` annotation:
-```
+```java
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 
@@ -221,7 +221,7 @@ public class BeforeExample {
 
 ### After Returning
 _After Returning_ advice is declared using the `@AfterReturning` annotation:
-```
+```java
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.AfterReturning;
 
@@ -237,7 +237,7 @@ public class AfterReturningExample {
 ```
 
 Note that you can also bind `@AfterReturning` a returned value to the advice in order to access information from it (such as storing its value, or printing information specific to the returned data). This binding is declared using the `returning` attribute in the pointcut:
-```
+```java
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.AfterReturning;
 
@@ -257,7 +257,7 @@ Here, "retVal" is the name given to the object being returned, and is referenced
 
 ### After Throwing
 As you may assume, _After Throwing_ advice is declared with the `@After Throwing` annotation:
-```
+```java
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.AfterThrowing;
 
@@ -273,7 +273,7 @@ public class AfterThrowingExample {
 ```
 
 Similarly to `@AfterReturning`, you may reference a thrown exception within the advice through the use of the _throwing_ attribute, which allows you to reference the exception within the method signature of the advice by corresponding an argument in the method signature with the name declared with the _throwing_ attribute:
-```
+```java
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.AfterThrowing;
 
@@ -292,7 +292,7 @@ public class AfterThrowingExample {
 
 ### After (finally)
 _After_ advice is declared using the `@After` annotation. Since it will execute after normal or exceptional completion of a method, you must make sure any `@After` advice is configured to handle both conditions:
-```
+```java
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.After;
 
@@ -308,7 +308,7 @@ public class AfterFinallyExample {
 ```
 
 ### Around
-```
+```java
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Around;
 import org.springframework.stereotype.Component;
