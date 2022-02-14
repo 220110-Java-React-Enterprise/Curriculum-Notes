@@ -318,7 +318,7 @@ import org.springframework.stereotype.Component;
 public class AroundExample {
     private static Logger log = Logger.getLogget(LoggingAspect.class);
 
-    @After("com.revature.example.dataAccessOperation()")
+    @Around("com.revature.example.dataAccessOperation()")
     public void performAroundAdvice() {
         log.info("This is Around Advice");
     }
