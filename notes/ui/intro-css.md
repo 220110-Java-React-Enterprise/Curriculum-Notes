@@ -384,7 +384,7 @@ The most commonly used attribute selectors are listed below:
 
 [attribute="value"] Selector -  uses the `=` operator to select the element whose attribute value is exactly equal to the given value.
 
-[attribute~="value"] Selector - uses the `~=` operator to select elements that have the specified attribute with a value containing a given word, delimited by spaces.
+[attribute~="value1 value2 value3"] Selector - uses the `~=` operator to select elements that have the specified attribute with a value containing a given word, delimited by spaces.
 
 [attribute|="value"] Selector - uses the `|=` operator to select elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-).
 
