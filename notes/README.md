@@ -2,6 +2,8 @@
 ### Newest Topics:
  - Spring
  - REST
+ - HTML/CSS
+
 
 ## Java
  - [Intro to OOP](./java/object-oriented-programming.md)
@@ -29,6 +31,7 @@
  - [Threads & Concurrency](./java/java-threads.md)
  - [Junit & Mockito](./java/java-junit.md)
 
+
 ## SQL
  - [Relational Databases](./sql/intro-to-rdbms.md)
  - [Intro to SQL](./sql/intro-to-sql.md)
@@ -43,22 +46,19 @@
  - [Aggregate & Scalar Functions](./sql/sql-functions.md)
  - [JDBC](./sql/intro-to-jdbc.md)
 
+
+## Web UI
+ - [Intro to HTML](./ui/intro-to-html.md)
+ - [HTML 5](./ui/html-5.md)
+ - [HTML Forms](./ui/html-forms.md)
+ - [Intro to CSS](./ui/intro-css.md)
+
+
 ## ORMs
  - [Intro to Hibernate & ORMs](./misc/hibernate.md)
  - [Hibernate Configuration](./misc/hibernate-config.md)
  - [Executing Statements With Hibernate](./misc/hibernate-querying.md)
 
-## Web Services
- - [Intro to Web Services](./web%20services/intro-to-web-services.md)
- - [Into to HTTP](./web%20services/intro-to-http.md)
- - [REST I](./web%20services/rest.md)
- - [REST II](./web%20services/best-practices.md)
- - [Richardson Maturity Model](./web%20services/rest-rmm.md)
- - [Client/Server](./web%20services/client-server-architecture.md)
- - [Intro to Servlets](./web%20services/intro-to-servlets.md)
- - [Servlet Config](./web%20services/servlet-config.md)
- - [Using Servlets](./web%20services/using-servlets.md)
- - [Session Management](./web%20services/session-management.md)
 
 ## Spring
  - [Intro to Spring](./spring/intro-spring.md)
@@ -75,6 +75,20 @@
  - [Spring Annotations](./spring/spring-annotations.md)
  - [Spring AOP](./spring/spring-aop.md)
  - [Spring Tools](./spring/spring-tools.md)
+
+
+## Web Services
+ - [Intro to Web Services](./web%20services/intro-to-web-services.md)
+ - [Into to HTTP](./web%20services/intro-to-http.md)
+ - [REST I](./web%20services/rest.md)
+ - [REST II](./web%20services/best-practices.md)
+ - [Richardson Maturity Model](./web%20services/rest-rmm.md)
+ - [Client/Server](./web%20services/client-server-architecture.md)
+ - [Intro to Servlets](./web%20services/intro-to-servlets.md)
+ - [Servlet Config](./web%20services/servlet-config.md)
+ - [Using Servlets](./web%20services/using-servlets.md)
+ - [Session Management](./web%20services/session-management.md)
+
 
 ## DevOps
  - [DevOps Overview](./devops/devops-overview.md)
@@ -109,6 +123,7 @@
  - [Consuming APIs from Java](./misc/consuming-api.md)
  - [Jackson Library](./misc/jackson.md)
  - [JSON](./misc/intro-to-json.md)
+
 
 ## Design Patterns
  - [Design Patterns](./misc/design-patterns.md)
