@@ -59,7 +59,7 @@
  - [Advanced Java Syntax](./javascript/js-advanced-syntax.md)
  - [ES6 Features](./javascript/javascript-es6.md)
  - [ES6 Classes](./javascript/javascript-classes.md)
- - [AJAX & Fetch (Consuming APIs)][./javascript/ajax-fetch.md]
+ - [AJAX & Fetch (Consuming APIs)](./javascript/ajax-fetch.md)
 
 
 ## ORMs
