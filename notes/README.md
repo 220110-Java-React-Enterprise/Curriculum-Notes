@@ -60,6 +60,7 @@
  - [ES6 Features](./javascript/javascript-es6.md)
  - [ES6 Classes](./javascript/javascript-classes.md)
  - [AJAX & Fetch (Consuming APIs)](./javascript/ajax-fetch.md)
+ - [DOM Manipulation](./javascript/javascript-dom.md)
 
 
 ## ORMs
