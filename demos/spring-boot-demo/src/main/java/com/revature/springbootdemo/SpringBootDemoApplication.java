@@ -19,11 +19,13 @@ public class SpringBootDemoApplication {
 		AccountRepo accountRepo = context.getBean(AccountRepo.class);
 		UserRepo userRepo = context.getBean(UserRepo.class);
 
-		Account account = new Account(99.99, "checking");
+		Account account = new Account(50.0, "checking");
 		accountRepo.save(account);
 		User user = new User("kplummer", "password");
 		user.addAccount(account);
 		userRepo.save(user);
+
+		
 
 	}
 }
