@@ -52,6 +52,14 @@
  - [HTML 5](./ui/html-5.md)
  - [HTML Forms](./ui/html-forms.md)
  - [Intro to CSS](./ui/intro-css.md)
+ - [Intro to JavaScript](./javascript/intro-to-javascript.md)\
+ - [JS I - Types and Coercion](./javascript/js-types-coercion.md)
+ - [JS II - Scopes, Events, Errors](./javascript/more-javascript.md)
+ - [JS III - Arrays, Classes, Hoisting](./javascript/javascript-fundamentals.md)
+ - [Advanced Java Syntax](./javascript/js-advanced-syntax.md)
+ - [ES6 Features](./javascript/javascript-es6.md)
+ - [ES6 Classes](./javascript/javascript-classes.md)
+ - [AJAX & Fetch (Consuming APIs)][./javascript/ajax-fetch.md]
 
 
 ## ORMs
