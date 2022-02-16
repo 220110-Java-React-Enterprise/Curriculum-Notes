@@ -25,7 +25,7 @@ public class SpringBootDemoApplication {
 		user.addAccount(account);
 		userRepo.save(user);
 
-		
+
 
 	}
 }
