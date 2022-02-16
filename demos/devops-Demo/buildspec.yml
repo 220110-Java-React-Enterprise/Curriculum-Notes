@@ -4,9 +4,21 @@ phases:
   install:
     runtime-versions:
       java: corretto11
-  post_build:
+  pre_build:
+    commands:
+      - echo ======================================== PRE BUILD ========================================
+      - pwd
+      - ls -al
+      - aws s3 cp s3://kylebucketrevature/jdbc.properties src/main/resources/jdbc.properties
+      - aws s3 cp s3://kylebucketrevature/custom-lists-1.0.jar custom-lists-1.0.jar
+      - mvn install:install-file -Dfile=custom-lists-1.0.jar -DgroupId=com.revature -DartifactId=custom-lists -Dversion=1.0 -Dpackaging=jar
+      - ls -al
+      - ls -al src/main/resources/
+  build:
     commands:
       - mvn package
+  post_build:
+    commands:
       - mv target/devops-demo-0.1.war ROOT.war
 artifacts:
   files:

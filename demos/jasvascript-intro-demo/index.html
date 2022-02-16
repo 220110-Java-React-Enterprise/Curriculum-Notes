@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello, World!</p>
+
+    <script>
+        let x = 4;
+        let s = '5';
+        if(x < s) {
+            console.log("x < s");
+        } else {
+            console.log("x > s");
+        }
+
+
+        if(5 > 10) {
+            console.log("it's not.");
+        } else if (5 < 10) {
+            console.log("Else if statements work exactly as expected!");
+        }
+    
+
+        let xs = x + s;
+        let sx = s + x;
+
+        for(let i = 0; i < 5; i++) {
+            console.log("i = ", i);
+        }
+
+        let person = {
+            name: 'Bob',
+            age: 25
+        };
+
+        console.log("person name: ", person.name, " person age: ", person.age);
+        console.log("Fact finding with + " + person);
+        console.log("Fact finding with , ", person);
+
+        let a = 1;
+        let b = {
+            name: "kyle",
+            age: "old"
+        }
+        let c = function() {
+            console.log("something");
+        }
+    
+
+        console.log("xs = ", xs, ". sx = ", sx);
+
+
+        let y = x == 4 ? 4 : 0;
+        console.log("y = ", y);
+        
+
+    </script>
+</body>
+</html>
