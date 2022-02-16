@@ -1,6 +1,7 @@
 # Code Demos
 
  - [Consuming APIs from Java Backend](./consuming-apis)
+   - [Example of consuming the RAWG API](./rawg-test)
  - [Revassistant](https://github.com/LiquidPlummer/Revassistant)
  - [Java Fundementals](./java-fundamentals/)
  - [Array Sorting](./array-sorting/)
