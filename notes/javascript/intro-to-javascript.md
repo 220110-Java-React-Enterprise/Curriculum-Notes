@@ -136,7 +136,7 @@ Javascript Operators performs some operation on single or multiple operands  and
 ### Control Flow
 
 JavaScript uses the following control flow statements:
-* `if/else if/else`
+* `if/else`
 * `for`
 * `for-in`
 * `for-of`
