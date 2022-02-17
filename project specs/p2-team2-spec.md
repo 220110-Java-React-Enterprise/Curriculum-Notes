@@ -36,10 +36,19 @@ Have you been wasting time with expensive travel agents? Or maybe you've found y
 Your team will need to work with the trainer to come up with a satisfactory list of user stories for MVP as well as bonus stories. They should begin with "As a [stakeholder] I can... and describe what the user should be able to do. Aim for at least 2 different roles, perhaps user and administrator. Try to come up with 6-8 user stories for MVP. Carefully consider what your team can accomplish in 2 weeks and try not to set yourselves too great a task.
 
 ## User Stories:
+ - As a guest, I can view exchange rate between two locations
+ - As a guest, I can view weather at a given travel location
+ - As a user, I can register and login to an account
+ - As a user, I can delete my account
+ - As a user, I can save an itinerary
+ - As an admin, I can access any user account
+ - As an admin, I can reset a user account password
+ - As an admin, I can delete a user account
 
-    
+
 ## Bonus stories:
-
+As a user, I can get alerts about situations in areas I would travel to, like disease outbreaks
+As a user, I can see recommendations about restaurants and other businesses in the area
 
 
 ## Tech Stack
