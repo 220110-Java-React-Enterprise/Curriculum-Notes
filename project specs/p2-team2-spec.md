@@ -29,7 +29,7 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 
 
-## TravelBuddy
+## aTravelPlanner
 Have you been wasting time with expensive travel agents? Or maybe you've found yourself hopelessly stuck in an endless cycle of webpages? Or maybe your friend's cousin's brother's aunt's sister told you that there's a great place for you to go? Well, do we have a solution for you with aTravelPlanner! Now, the power to discover your next fantastic voyage is as simple as shooting fish in a barrel. aTravelPlanner will allow you to look into your destination by checking the local weather, viewing the currency exchange rates, and tracking your travel path.
 
 ### Minimum Viable Product
