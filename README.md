@@ -19,5 +19,8 @@ Welcome to Revature! Over the course of this curriculum we will prepare you to b
    - [P1 Considerations](./project%20specs/p1-overview.pdf)
  - [Project 2 - ~5 person groups, Full stack web site using 3rd party API](./project%20specs/project-2.md)
    - [TravelBuddy](./project%20specs/p2-team1-spec.md)
+   - [aTravelPlanner](./project%20specs/p2-team2-spec.md)
+   - [Memory Pak](./project%20specs/p2-team3-spec.md)
+   - [Bed, Breakfast, & Java](./project%20specs/p2-team4-spec.md)
  - Project 3 - Full group, full stack applicaiton dictated by CoE stakeholders
 
