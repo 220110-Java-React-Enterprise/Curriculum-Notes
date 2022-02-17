@@ -1,7 +1,6 @@
 # Project 2: team4
 
 ## Description
-
 Your next project will build upon the concepts from project 0 & 1, adding the following topics:
  - HTML/CSS/JS
  - CI/CD
@@ -34,8 +33,8 @@ A great hotel can sometimes be hard to find. This app offers a way to find hotel
 BB&J allows users to compare the pricing and availability of hotels in order to book the best option.
 Photos and reviews are provided to the user giving them all the information they need.
 After staying, users can then write their own reviews.
-Adminstrators can add or remove hotels.
-Adminstrators are able to view all of their bookings and cancel them if needed.
+Administrators can add or remove hotels.
+Administrators are able to view all of their bookings and cancel them if needed.
 We utilize API's provided by Rapid API. (https://www.rapidapi.com/)
 
 ### Minimum Viable Product
