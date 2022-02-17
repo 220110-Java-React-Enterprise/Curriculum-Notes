@@ -29,18 +29,27 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 
 
-## appname
-
+## appname - Need app name and expanded elevator pitch
+Our project is a Video Game Backlog Application. You will be able to make an account, add games to your backlog, and rate and review games in your backlog.
 
 ### Minimum Viable Product
 Your team will need to work with the trainer to come up with a satisfactory list of user stories for MVP as well as bonus stories. They should begin with "As a [stakeholder] I can... and describe what the user should be able to do. Aim for at least 2 different roles, perhaps user and administrator. Try to come up with 6-8 user stories for MVP. Carefully consider what your team can accomplish in 2 weeks and try not to set yourselves too great a task.
 
-## User Stories:
+### User Stories
+* As a user, I can register an account.
+* As a user, I can login to my account.
+* As a user, I can add a game to my backlog.
+* As a user, I can rate a game in my backlog.
+* As a user, I can review a game in my backlog.
+* As a user, I can view my backlog.
+* As a user, I can add another user as a friend.
+* As a user, I can view a friend's backlog.
+* As an administrator, I an modify a user's backlog.
+* As an administrator, I can view all user backlogs.
 
-    
-## Bonus stories:
-
-
+### Bonus Stories
+* As a user, I can search for games.
+* As an administrator, I can modify available games from the master list.
 
 ## Tech Stack
 You should be employing the following technologies in your project.
