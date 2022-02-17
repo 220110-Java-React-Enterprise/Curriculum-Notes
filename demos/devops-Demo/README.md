@@ -10,6 +10,7 @@ With that devops branch I would suggest setting up workflows for merging, specif
 
 We need to create a CodeBuild "job".
 We need to create an EBS "environment".
+We need to create a CodePipeline that uses the above EBS env and CodeBuild job.
 We need to set up storage in an S3 bucket to hold secure stuff (like application.properties)
 
 

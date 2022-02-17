@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello, World!!!!!!!!!!</p>
+
+    <script>
+        let kyle = {
+            name: "Kyle Plummer",
+            age: 36,
+            occupation: "Java Trainer"
+        }
+
+        //this one doesn't work, objects can't be de-referenced by index
+        //However this doesn't throw an error, nor crash the script
+        // console.log("for loop objects:")
+        // for(let i = 0; i < kyle.length; i++){
+        //     console.log(kyle[i]);
+        // };
+        console.log("for-in loop objects:")
+        for(let temp in kyle) {
+            console.log(temp + ": " + kyle[temp]);
+        };
+        //This doesn't work either, causes an error, says kyle is not iterable
+        // console.log("for-of loop objects:")
+        // for(let temp of kyle) {
+        //     console.log(temp);
+        // };
+
+
+        //We can use any of the three for loops in JS to loop through arrays
+        let associates = ["Alvin", "Cody", "Ahmad", "Ibrahima", "Brian"]
+        console.log("for loop array:")
+        for(let i = 0; i < associates.length; i++) {
+            console.log(associates[i]);
+        };
+        console.log("for in loop array:")
+        for(let i in associates) {
+            console.log(associates[i]);
+        };
+        console.log("for of loop array:")
+        for(let i of associates) {
+            console.log(i);
+        };
+
+
+
+        let currentDate = new Date();
+        var dt = new Date("2022, 02, 17");
+        console.log(dt);
+        
+        // for(let temp in currentDate) {
+        //     console.log(temp, ": ", currentDate[temp])
+        // }
+
+
+        console.log("is 0 truthy?  " + Boolean(0));
+        console.log("is -1 truthy?  " + Boolean(-1));
+        console.log("is 1 truthy?  " + Boolean(1));
+        console.log("is true truthy?  " + Boolean(true));
+        console.log("is false truthy?  " + Boolean(false));
+        console.log("is blank string truthy?  " + Boolean(""));
+        console.log("is non-blank string truthy?  " + Boolean("something"));
+        console.log("is the string false truthy?  " + Boolean("false"));
+        console.log("is the string true truthy?  " + Boolean("true"));
+        console.log("is undefined truthy?  " + Boolean(undefined));
+        console.log("is NaN truthy?  " + Boolean(NaN));
+        console.log("is null truthy?  " + Boolean(null));
+        console.log("is whitespace truthy?  " + Boolean(" "));
+
+
+        var o = "o";
+        let u = "u";
+        const t = "t";
+        let funkyFunc = function() {
+            console.log("funkyFunc: ", o, u, t);
+        }();
+
+        (function() {console.log("Alvin is cool!")})();
+        
+
+        console.log("Z: ", z)
+        z = "top";
+        console.log("Z: ", z)
+
+
+        console.log("function scope: ")
+        //console.log(funcVar);//var is not hoisted to the top of the script
+        //console.log(funcLet);
+        let func = function() {
+            console.log(funcVar); //this is the difference between block and function scope, vars get hoisted to the top of the funciton
+            //console.log(funcLet);
+            let funcLet = "funcLet";
+            var funcVar = "funcVar";
+            console.log(funcVar);
+            console.log(funcLet);
+        }
+        func();
+        //console.log(funcVar)
+
+        console.log("block scope: ")
+        console.log(blockVar);//but in block scope the hoisting leaves the scope, so block scope doesn't act as a barrier for hoisting
+        //console.log(blockLet);
+        {
+            console.log(blockVar); 
+            //console.log(blockLet);
+            let blockLet = "blockLet";
+            var blockVar = "blockVar";
+            console.log(blockVar);
+            console.log(blockLet);
+        }
+        console.log(blockVar);
+        //console.log(blockLet);
+
+
+        //global scope
+        //g is hoisted up to global scope, so is in scope but undefined here
+        var a = "a";
+        let b = "b";
+        const c = "c";
+        //a, b, and c are in scope here
+        //g is hoisted up to global scope, so is in scope but undefined here
+
+        //function scope
+        (function() {
+            //in scope: a, b, c
+            //hoisted: d is in scope but undefined here
+            var d = "d";
+            let e = "e";
+            const f = "f";
+            //a, b, c, d, e, f are all in scope and defined here
+            //g is hoisted up to global scope, so is in scope but undefined here
+        })();
+
+        //a, b, c are in scope
+        //g is hoisted up to global scope, so is in scope but undefined here
+
+
+        //block scope
+        {
+            //a, b, c are in scope
+            //g is hoisted up to global scope, so is in scope but undefined here
+            var g = "g";
+            let h = "h";
+            const i = "i";
+            //a, b, c, g, h, i are all in scope and defined
+        }
+
+        //a, b, c, g are in scope and defined
+        console.log("Z: ", z)
+        var z = "bottom";
+        console.log("Z: ", z)
+
+        anotherExample(); // no error thrown!
+
+        function anotherExample() {
+            console.log('function hoisting works!');
+        }
+
+
+    </script>
+</body>
+</html>
