@@ -27,7 +27,9 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 10. Unit test coverage of service-layer classes
 11. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
 
-
+### Bonus Features
+1. Unit test coverage of service-layer classes
+2. Basic (cypher) or advanced (shashed) encryption for secure data in HTTP exchanges
 
 ## Memory Pak
 Have you ever wanted a concise way to keep track of what games you've played and what you thought about them? Then Memory Pak is the website for you! It's an all-in-one tool to track your video game habits, see what games your friends are playing and more! With Memory Pak, you'll be able to manage an expansive backlog of games and leave ratings and reviews on them. You can also use the app to simply browse through games and discover something new. We utilize RAWG API, one of the largest video game databases. (https://rawg.io/)
