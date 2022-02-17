@@ -1,4 +1,4 @@
-# Project 2 - Team 3: 
+# Project 2 - Team 3 - Memory Pak:
 
 ## Description
 
@@ -29,8 +29,8 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 
 
-## appname - Memory Pak
-Our project is a Video Game Backlog Application. You will be able to make an account, add games to your backlog, and rate and review games in your backlog.
+## Memory Pak
+Have you ever wanted a concise way to keep track of what games you've played and what you thought about them? Then Memory Pak is the website for you! It's an all-in-one tool to track your video game habits, see what games your friends are playing and more! With Memory Pak, you'll be able to manage an expansive backlog of games and leave ratings and reviews on them. You can also use the app to simply browse through games and discover something new. We utilize RAWG API, one of the largest video game databases. (https://rawg.io/)
 
 ### Minimum Viable Product
 Your team will need to work with the trainer to come up with a satisfactory list of user stories for MVP as well as bonus stories. They should begin with "As a [stakeholder] I can... and describe what the user should be able to do. Aim for at least 2 different roles, perhaps user and administrator. Try to come up with 6-8 user stories for MVP. Carefully consider what your team can accomplish in 2 weeks and try not to set yourselves too great a task.
