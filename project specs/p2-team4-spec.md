@@ -1,4 +1,4 @@
-# Project 2: team4
+# Project 2 - Team 4 - Bed, Breakfast & Java:
 
 ## Description
 Your next project will build upon the concepts from project 0 & 1, adding the following topics:
@@ -23,9 +23,11 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 7. Documentation (all classes and methods have adequate Javadoc comments)
 8. All Exceptions are caught and logged
 9. Data useful to the application is retrieved from a third party API
-10. Unit test coverage of service-layer classes
 11. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
 
+
+### Bonus Features
+1. Unit test coverage of service-layer classes
 
 
 ## Bed, Breakfast & Java
