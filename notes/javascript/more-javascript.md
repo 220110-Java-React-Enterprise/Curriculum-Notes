@@ -232,7 +232,7 @@ Sometimes things go wrong. When things go wrong in JavaScript, the result usuall
 2) User-defined error: An error built as part of your code to represent a problem that can occur.
 Errors can have many fields depending on the implementation, however the standard defines an error as having a `name` and `message` field.
 
-## Exception Handling Statements
+## Error Handling Statements
 In order to work with an error, you need to utilize statements that will allow you to handle the error. There are two constructs we need to be aware of.
 
 ### try...catch
@@ -375,7 +375,7 @@ Example:
 <div id="myDiv" style="background-color:grey">
 Welcome to Timing Events.
 <button id="myButton">Click Me</button>
-</div>
+</div>	
 <script src="index.js"></script>
 </body>
 </html>
