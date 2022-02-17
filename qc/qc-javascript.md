@@ -41,6 +41,7 @@
    - == allows type coercion, === does not(strict comparison). 
  - What is the difference between for-of and for-in loops? 
    - for-in iterates over keys, while for-of iterates through values.
+   - The important difference between for-in and for-of is that the first allows iteration over the keys of any object, while for-of allows iteration over an array or array-like object.
  - Explain the async/await keywords. Why is it preferred to use this instead of .then() methods? 
    - Async denotes a function can use the await keyword. The await keyword tells the application to wait for a promise to be fulfilled before completing a statement.
    - Async/await is more readable than chained .then()s
