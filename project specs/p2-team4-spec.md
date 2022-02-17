@@ -29,7 +29,7 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 
 
-## appname - need a title and maybe another bonus user story or two
+## Bed, Breakfast & Java
 A great hotel can sometimes be hard to find. This app offers a way to find hotels in the area with ease.
 Our website allows users to compare the pricing and availability of hotels in order to book the best option.
 Photos and reviews are provided to the user giving them all the information they need.
