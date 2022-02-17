@@ -29,17 +29,31 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 
 
-## appname
-
+## appname - need a title and maybe another bonus user story or two
+A great hotel can sometimes be hard to find. This app offers a way to find hotels in the area with ease.
+Our website allows users to compare the pricing and availability of hotels in order to book the best option.
+Photos and reviews are provided to the user giving them all the information they need.
+After staying, users can then write their own reviews.
+Adminstrators can add or remove hotels.
+Adminstrators are able to view all of their bookings and cancel them if needed.
+We utilize API's provided by Rapid API. (https://www.rapidapi.com/)
 
 ### Minimum Viable Product
 Your team will need to work with the trainer to come up with a satisfactory list of user stories for MVP as well as bonus stories. They should begin with "As a [stakeholder] I can... and describe what the user should be able to do. Aim for at least 2 different roles, perhaps user and administrator. Try to come up with 6-8 user stories for MVP. Carefully consider what your team can accomplish in 2 weeks and try not to set yourselves too great a task.
 
 ## User Stories:
+- As a user, I can login/register.
+- As a user, I can choose a destination offered through the listing.
+- As a user, I can choose specific dates for booking a stay.
+- As a user, I can see details about location
+- As a user, I can cancel a booking
+- As an admin, I can view all of my hotel bookings.
+- As an admin, I can update/cancel hotel bookings.
+- As an admin, I can add/remove hotel listings.
 
     
 ## Bonus stories:
-
+- As a user, I can see photos of the location
 
 
 ## Tech Stack
