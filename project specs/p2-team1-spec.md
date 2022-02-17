@@ -1,4 +1,4 @@
-# Project 2 - Team 2 - TravelBuddy:
+# Project 2 - Team 1 - TravelBuddy:
 
 ## Description
 
