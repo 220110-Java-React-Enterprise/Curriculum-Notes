@@ -29,6 +29,7 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 ### Bonus Features
 1. Unit test coverage of service-layer classes
+2. Basic (cypher) or advanced (shashed) encryption for secure data in HTTP exchanges
 
 
 ## aTravelPlanner
