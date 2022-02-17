@@ -15,3 +15,4 @@
  - [Servlets Demo](./servlet-demo/)
  - [Simple File Logger](./file-logger/)
  - [DevOps-Demo](./devops-Demo)
+ - [JavaScript Demo](./jasvascript-intro-demo)
