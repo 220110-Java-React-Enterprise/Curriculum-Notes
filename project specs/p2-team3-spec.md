@@ -1,4 +1,4 @@
-# Project 2: team3
+# Project 2 - Team 3: 
 
 ## Description
 
@@ -29,7 +29,7 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 
 
-## appname - Need app name and expanded elevator pitch
+## appname - Memory Pak
 Our project is a Video Game Backlog Application. You will be able to make an account, add games to your backlog, and rate and review games in your backlog.
 
 ### Minimum Viable Product
