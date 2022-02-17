@@ -31,7 +31,7 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 
 ## Bed, Breakfast & Java
 A great hotel can sometimes be hard to find. This app offers a way to find hotels in the area with ease.
-Our website allows users to compare the pricing and availability of hotels in order to book the best option.
+BB&J allows users to compare the pricing and availability of hotels in order to book the best option.
 Photos and reviews are provided to the user giving them all the information they need.
 After staying, users can then write their own reviews.
 Adminstrators can add or remove hotels.
