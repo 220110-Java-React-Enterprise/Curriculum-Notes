@@ -196,7 +196,7 @@ console.log(`Book: ${book}, Author: ${author}`);//output: Book: The Three Musket
 **Example:** Here newEmployee is empty and local variable newId is created and the default value is 12, if id property not found in the object, the newId value is assigned with a default value. 
 ```javascript
 var newEmployee = {};  
-var { id: newId = 12 } = newEmployee;  
+var { newId = 12 } = newEmployee;  
 console.log(newId);      // Output: 12  
 ```
 
