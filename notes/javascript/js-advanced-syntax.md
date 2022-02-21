@@ -57,7 +57,7 @@ const arr =[1,2,3,4,5,6];
 console.log(...arr);    //output: 1 2 3 4 5 6
 
 const days = ["mon", "tue", "wed", "thurs", "fri", "sat", "sun"];
-const.log(...days);    //output: mon tue wed thurs fri sat sun
+console.log(...days);    //output: mon tue wed thurs fri sat sun
 ```
 
 *  The spread operator used for combining arrays.
