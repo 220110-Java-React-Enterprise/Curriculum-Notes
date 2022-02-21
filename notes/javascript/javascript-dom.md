@@ -186,20 +186,20 @@ The children of a node are the nodes that are one level below it. The properties
 **Example:**
 ```html
 <body>
-	<div id="myDiv">
-       	<p>This is a paragraph - first child</p>
-        <div> this is a div elemt - last child</div> 
+    <div id="myDiv">
+        <p>This is a paragraph - first child</p>
+        <div> this is a div elemt - last child</div>
     </div>
     <script>
         let elmt = document.querySelector('#myDiv');
-       	document.write("<br> Child nodes of div element: <br>");
+        document.write("<br> Child nodes of div element: <br>");
         for (let i = 0; i < elmt.childNodes.length; i++) {
-              document.write(elmt.childNodes[i]  + "<br>");
-              }
-              
-       document.write("<br> First child of div element: <br>" +elmt.firstChild) ; 
-       
-       document.write("<br> Last child of div element: <br>" +elmt.lastChild) ;        
+            document.write(elmt.childNodes[i] + "<br>");
+        }
+
+        document.write("<br> First child of div element: <br>" + elmt.firstChild);
+
+        document.write("<br> Last child of div element: <br>" + elmt.lastChild);        
     </script>
 </body>
 ```
