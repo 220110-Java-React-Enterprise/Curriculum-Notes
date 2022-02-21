@@ -32,7 +32,7 @@
  - How would you set default values for parameters to a function? 
    - myFunction(key = value, name = "Kyle"){//some logic here}
  - Give the syntax for template literals / string interpolation 
-   - `\`This is a ${variable}\``
+   - \`This is a ${variable}\`
  - What are callback functions? 
    - A function passed as an argument to another function in order to be invoked as part of that function.
  - What are self-invoking functions?
