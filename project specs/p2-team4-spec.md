@@ -23,12 +23,13 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 7. Documentation (all classes and methods have adequate Javadoc comments)
 8. All Exceptions are caught and logged
 9. Data useful to the application is retrieved from a third party API
-11. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
+10. Server is hosted on AWS
 
 
 ### Bonus Features
 1. Unit test coverage of service-layer classes
 2. Basic (cypher) or advanced (shashed) encryption for secure data in HTTP exchanges
+3. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
 
 
 ## Bed, Breakfast & Java
