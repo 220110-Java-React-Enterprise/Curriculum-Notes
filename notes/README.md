@@ -74,6 +74,12 @@
  - [Props & State](./react/props-state.md)
  - [Events](./react/react-events.md)
  - [Routing](./react/react-routing)
+ - [Immutability of State](./react/state-immutability.md)
+ - [Data Flow](./react/state-data-flow.md)
+ - [Lifting State](./react/state-lifting.md)
+ - [Hooks](./react/react-hooks.md)
+ - [High Order Components](./react/high-order-components.md)
+ - more to come...
 
 
 ## ORMs
