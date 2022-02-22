@@ -152,6 +152,7 @@
  - [Consuming APIs from Java](./misc/consuming-api.md)
  - [Jackson Library](./misc/jackson.md)
  - [JSON](./misc/intro-to-json.md)
+ - [Axios](./misc/axios.md)
 
 
 ## Design Patterns
