@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <p>Hello, World!!!!!!!!!!</p>
+
+
 
     <script>
         let kyle = {
@@ -23,7 +27,7 @@
         //     console.log(kyle[i]);
         // };
         console.log("for-in loop objects:")
-        for(let temp in kyle) {
+        for (let temp in kyle) {
             console.log(temp + ": " + kyle[temp]);
         };
         //This doesn't work either, causes an error, says kyle is not iterable
@@ -36,15 +40,15 @@
         //We can use any of the three for loops in JS to loop through arrays
         let associates = ["Alvin", "Cody", "Ahmad", "Ibrahima", "Brian"]
         console.log("for loop array:")
-        for(let i = 0; i < associates.length; i++) {
+        for (let i = 0; i < associates.length; i++) {
             console.log(associates[i]);
         };
         console.log("for in loop array:")
-        for(let i in associates) {
+        for (let i in associates) {
             console.log(associates[i]);
         };
         console.log("for of loop array:")
-        for(let i of associates) {
+        for (let i of associates) {
             console.log(i);
         };
 
@@ -53,7 +57,7 @@
         let currentDate = new Date();
         var dt = new Date("2022, 02, 17");
         console.log(dt);
-        
+
         // for(let temp in currentDate) {
         //     console.log(temp, ": ", currentDate[temp])
         // }
@@ -77,12 +81,12 @@
         var o = "o";
         let u = "u";
         const t = "t";
-        let funkyFunc = function() {
+        let funkyFunc = function () {
             console.log("funkyFunc: ", o, u, t);
         }();
 
-        (function() {console.log("Alvin is cool!")})();
-        
+        (function () { console.log("Alvin is cool!") })();
+
 
         console.log("Z: ", z)
         z = "top";
@@ -92,7 +96,7 @@
         console.log("function scope: ")
         //console.log(funcVar);//var is not hoisted to the top of the script
         //console.log(funcLet);
-        let func = function() {
+        let func = function () {
             console.log(funcVar); //this is the difference between block and function scope, vars get hoisted to the top of the funciton
             //console.log(funcLet);
             let funcLet = "funcLet";
@@ -107,7 +111,7 @@
         console.log(blockVar);//but in block scope the hoisting leaves the scope, so block scope doesn't act as a barrier for hoisting
         //console.log(blockLet);
         {
-            console.log(blockVar); 
+            console.log(blockVar);
             //console.log(blockLet);
             let blockLet = "blockLet";
             var blockVar = "blockVar";
@@ -127,7 +131,7 @@
         //g is hoisted up to global scope, so is in scope but undefined here
 
         //function scope
-        (function() {
+        (function () {
             //in scope: a, b, c
             //hoisted: d is in scope but undefined here
             var d = "d";
@@ -152,17 +156,141 @@
         }
 
         //a, b, c, g are in scope and defined
+
+
+
+        //hoisting - look up for z to be used and even defined earlier in the script
         console.log("Z: ", z)
         var z = "bottom";
         console.log("Z: ", z)
 
-        anotherExample(); // no error thrown!
 
-        function anotherExample() {
+        //functions can also be hoisted, and even get hoisted complete with their implementation!
+        hoistedFunction(); // no error thrown!
+
+        function hoistedFunction() {
             console.log('function hoisting works!');
         }
 
 
+        let list = [1, 2, 3, 4, 5];
+        console.log("For-in: ");
+        for (key in list) {
+            // an enhanced for-in loop in JS iterates through
+            // the keys not the values
+            console.log(key);
+            console.log(list[key]);
+        }
+
+        console.log("For-of: ");
+        for (element of list) {
+            // if you say of, it will iterate through the values
+            console.log(element);
+        }
+
+        console.log("forEach(): ");
+        list.forEach(
+            function (value, index) {
+                console.log(index + ' ' + value);
+            }
+        )
+
+
+        async function asyncFunc() {
+            let url = "https://pokeapi.co/api/v2/pokemon/ditto"
+            let response = await fetch(url, {
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                }
+            });
+            try {
+                let result = await response;
+                console.log(result);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        asyncFunc();
+
+
+        var hello = () => "Hello World!";
+        console.log(hello()); // output: "Hello World!"
+
+        var sum = (a, b) => {
+            let result = a + b;
+            return "Sum is " + result;
+        };
+
+        console.log(sum(5, 3));  //output: "sum is 8"
+
+
+
+
+        console.log
+        let newFunc = (a, b, c, d) => {
+            return a + b + c + d;
+        }
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+        console.log(newFunc(1, 2, 3, 4));
+
+        console.log(newFunc(...arr));
+
+        const days = ["mon", "tue", "wed", "thurs", "fri", "sat", "sun"];
+        console.log("mon", "tue", "wed", "thurs", "fri", "sat", "sun"); //these two lines are equivalent 
+        console.log(...days);    //output: mon tue wed thurs fri sat sun
+
+
+
+
+
+        //Destructuring
+        let you = ["Donald", "Farrar"];
+        let me = ["Kyle", "Plummer"];
+        // destructuring assignment sets firstname = arr[0] and lastname = arr[1]
+        let [firstname, lastname] = you;
+        console.log(firstname);
+        console.log(lastname);
+
+        [firstname, lastname] = me;
+        console.log(firstname);
+        console.log(lastname);
+
+
+        let [authorFirstName, , title] = ["Charles", "Dickens", "David Copperfield", 2002];
+        console.log(authorFirstName, title);
+
+
+        let array = [1, 2]
+        const [aa = 3, bb, cc = 5] = array;
+        console.log(`aa =  ${aa}, bb = ${bb}, cc = ${cc} `);    //output: a =  1, b = 2, c = 5 
+
+
+        var newEmployee = {
+            id: 22,
+            username: "kplummer"
+        };
+        var { id: newId, newAge = 5, username: newUser = "new" } = newEmployee;
+        console.log(newId, newAge, newUser);
+        console.log(newEmployee);
+        //console.log("username: ", username)
+
+        var employee = {
+            id: 11,
+            name: "Tom",
+            address: {
+                city: 'New York',
+                country: 'USA'
+            }
+        };
+        var { address: { city, country } } = employee;
+        console.log(city, country);
+
+
+
+
+
     </script>
 </body>
+
 </html>

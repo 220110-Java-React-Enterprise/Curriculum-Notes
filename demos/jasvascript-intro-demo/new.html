@@ -1,0 +1,60 @@
+<html onclick="alert('Bubbling: ' + this.tagName)">
+
+<body onclick="alert('Bubbling: ' + this.tagName)">
+    <div id="myDiv">
+        <p>This is a paragraph - first child</p>
+        <div> this is a div elemt - last child</div>
+    </div>
+
+
+    <ul id="animals">
+    </ul>
+
+
+    <div onclick="alert('Bubbling: ' + this.tagName)">DIV
+        <p onclick="alert('Bubbling: ' + this.tagName)">P
+            <a href="#" onclick="alert('Bubbling: ' + this.tagName)">Click Me!!</a>
+        </p>
+    </div>
+
+
+    <script>
+        let elmt = document.querySelector('#myDiv');
+        document.write("<br> Child nodes of div element: <br>");
+        for (let i = 0; i < elmt.childNodes.length; i++) {
+            document.write(elmt.childNodes[i] + "<br>");
+        }
+
+        console.log(elmt);
+        console.log(elmt.lastChild);
+
+
+
+
+        function createAnimalList(name) {
+            let li = document.createElement('li');
+            li.textContent = name;
+            return li;
+        }
+        // get the ul #animals
+        const list = document.querySelector('#animals');
+        // add animals to the list
+        list.appendChild(createAnimalList('Lion'));
+        list.appendChild(createAnimalList('Tiger'));
+        list.appendChild(createAnimalList('Wolf'));
+
+        let animals = document.getElementById('animals');
+
+        // create a new li node
+        let li = document.createElement('li');
+        li.textContent = 'Fish';
+
+        // insert a new node before the first list item
+        animals.insertBefore(li, animals.firstElementChild);
+
+
+
+    </script>
+</body>
+
+</html>
