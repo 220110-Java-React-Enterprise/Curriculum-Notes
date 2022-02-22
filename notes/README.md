@@ -79,7 +79,7 @@
  - [Lifting State](./react/state-lifting.md)
  - [Hooks](./react/react-hooks.md)
  - [High Order Components](./react/high-order-components.md)
- - more to come...
+ - [Redux](./react/redux.md)
 
 
 ## ORMs
