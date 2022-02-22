@@ -24,12 +24,13 @@ This project will be done in teams of 5-6 members that will be assigned when we 
 7. Documentation (all classes and methods have adequate Javadoc comments)
 8. All Exceptions are caught and logged
 9. Data useful to the application is retrieved from a third party API
-10. Unit test coverage of service-layer classes
-11. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
+10. Server is hosted on AWS
+
 
 ### Bonus Features
 1. Unit test coverage of service-layer classes
 2. Basic (cypher) or advanced (shashed) encryption for secure data in HTTP exchanges
+3. DevOps CI/CD pipeline is used to build and deploy project to a publicly available remote location
 
 ## Memory Pak
 Have you ever wanted a concise way to keep track of what games you've played and what you thought about them? Then Memory Pak is the website for you! It's an all-in-one tool to track your video game habits, see what games your friends are playing and more! With Memory Pak, you'll be able to manage an expansive backlog of games and leave ratings and reviews on them. You can also use the app to simply browse through games and discover something new. We utilize RAWG API, one of the largest video game databases. (https://rawg.io/)
