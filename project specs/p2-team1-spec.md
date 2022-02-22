@@ -1,5 +1,5 @@
 # Project 2 - Team 1 - TravelBuddy:
-
+Ahmad, Cheryl, David, Ibrahima, Jeremiah, Tiffany
 ## Description
 
 Your next project will build upon the concepts from project 0 & 1, adding the following topics:
