@@ -63,6 +63,13 @@
  - [AJAX & Fetch (Consuming APIs)](./javascript/ajax-fetch.md)
  - [DOM Manipulation](./javascript/javascript-dom.md)
 
+## TypeScript
+ - [Intro to TypeScript](./typescript/intro-typescript.md)
+ - [Variables & Types](./typescript/ts-variables.md)
+ - [Classes & Access Modifiers](./typescript/ts-classes.md)
+ - [Decorators](./typescript/ts-decorators.md)
+ - [Interfaces](./typescript/ts-interfaces.md)
+
 
 ## React & Redux
  - [Intro to React](./react/intro-react.md.txt)
