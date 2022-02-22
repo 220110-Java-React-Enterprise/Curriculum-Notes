@@ -3,6 +3,7 @@
  - JavaScript
  - TypeScript
  - React
+ - Axios
 
 
 ## Java
