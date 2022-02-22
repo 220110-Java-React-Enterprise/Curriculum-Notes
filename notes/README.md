@@ -64,7 +64,7 @@
 
 
 ## React & Redux
- - [Intro to REact](./react/intro-react.md.txt)
+ - [Intro to React](./react/intro-react.md.txt)
  - [Single Page Applications](./react/react-SPA.md)
  - [React Components](./react/react-components.md)
  - [JSX](./react/react-jsx.md)
