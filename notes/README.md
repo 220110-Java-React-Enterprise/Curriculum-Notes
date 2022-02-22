@@ -1,8 +1,8 @@
 # Notes
 ### Newest Topics:
- - Spring
- - REST
- - HTML/CSS
+ - JavaScript
+ - TypeScript
+ - React
 
 
 ## Java
