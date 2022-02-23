@@ -48,15 +48,15 @@ Your team will need to work with the trainer to come up with a satisfactory list
 - As a user, I can login/register.
 - As a user, I can choose a destination offered through the listing.
 - As a user, I can choose specific dates for booking a stay.
-- As a user, I can see details about location
 - As a user, I can cancel a booking
 - As an admin, I can view all of my hotel bookings.
 - As an admin, I can update/cancel hotel bookings.
-- As an admin, I can add/remove hotel listings.
 
     
 ## Bonus stories:
 - As a user, I can see photos of the location
+- As a user, I can see details about location
+- As an admin, I can add/remove hotel listings.
 
 
 ## Tech Stack
