@@ -168,3 +168,7 @@
  - [Design Patterns](./misc/design-patterns.md)
  - [Flux Design Pattern](./react_crach_course/react-flux.md)
  - [Front Controller Design Pattern](./web%20services/front-controller.md)
+
+
+## Visualizations:
+ - [CICD With AWS CodePipeline, CodeBuild, EBS, EC2, S3](./images/CICD-codepipeline.png)
