@@ -1,4 +1,8 @@
 <html onclick="alert('Bubbling: ' + this.tagName)">
+<head>
+    <script src="ts.js"></script>
+
+</head>
 
 <body onclick="alert('Bubbling: ' + this.tagName)">
     <div id="myDiv">
@@ -51,6 +55,9 @@
 
         // insert a new node before the first list item
         animals.insertBefore(li, animals.firstElementChild);
+
+        console.log(0.1+0.1 == 0.3); //false - due to floating percision error
+        console.log(1+2 == 3); //true
 
 
 
