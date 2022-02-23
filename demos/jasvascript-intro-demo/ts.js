@@ -1,28 +1,28 @@
-var num = 5; //perfectly valid javascript, which means it's also perfectly valid typescript
-var num2 = 5; //not valid JS, but valid TS
-var str = "test";
+//let num = 5; //perfectly valid javascript, which means it's also perfectly valid typescript
+let num2 = 5; //not valid JS, but valid TS
+let str = "test";
 console.log(num, str);
-var someString = num.toString();
-var someNum = parseInt("5");
+let someString = num.toString();
+let someNum = parseInt("5");
 console.log(someString, someNum);
-var undef = undefined;
-var undef2;
+let undef = undefined;
+let undef2;
 undef = null; //so we can assign a null value to an undefined type
-var nul = null;
-var nul2; //we can also leave a null type undefined, so that it's value = undefined.
+let nul = null;
+let nul2; //we can also leave a null type undefined, so that it's value = undefined.
 nul = undefined; //we can even reassign a null type as undefined.
 console.log(undef, undef2, nul, nul2);
 //This is valid JS, but in TS it is given an implicit type, based on the original assignment.
-var a = 1;
+let a = 1;
 //a = "hello"; //doesn't work because a is implcitly a number
-var b;
+let b;
 b = 1;
 b = "hello"; //this works because there is no implicit type given. This is implicitly of type "any"
-var c = "anything goes.";
+let c = "anything goes.";
 c = undefined;
 c = 5.5;
 c = "That all worked!";
-var d;
+let d;
 d = null;
 d = undefined;
 console.log(d);
@@ -34,31 +34,34 @@ var Color;
     Color[Color["Yellow"] = 3] = "Yellow";
 })(Color || (Color = {}));
 ;
-var col = Color.Red;
-var colorName = Color[2];
+let col = Color.Red;
+let colorName = Color[2];
 console.log("colorName: ", colorName);
-var AClass = /** @class */ (function () {
-    function AClass() {
+class AClass {
+    constructor() {
         this.prop = { g: "g" };
     }
-    return AClass;
-}());
-var obj = new AClass();
+}
+let obj = new AClass();
 obj.prop.g = "something else";
 console.log(obj);
-var Greeting = /** @class */ (function () {
+class Greeting {
     //constructor
-    function Greeting(name) {
+    constructor(name) {
         this.name = name;
     }
     //methods
-    Greeting.prototype.greet = function () {
+    greet() {
         return "Hello, " + this.name;
-    };
-    return Greeting;
-}());
+    }
+}
 ;
-var greeting = new Greeting(str);
+let greeting = new Greeting(str);
 console.log(greeting.greet());
-var user = { username: 'max', password: "123" };
+let user = { username: 'max', password: "123" };
 console.log(user);
+let car = {
+    accelerate(speed) {
+        //must be like this
+    }
+};
