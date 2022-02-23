@@ -42,7 +42,7 @@ Back in the day, class based components used to be considered as more powerful, 
 
 There are several lifecycle steps that a component will go through. Knowing the names of methods or hooks that correspond to certain phases in the component lifecycle is useful for functions that you want to call during certain steps of the lifecycle.
 
-![ReactComponentLifeCycle](https://gitlab.com/revature_training/react-team/-/blob/master/modules/02-react-fundamentals/ReactComponentLifecyle.png)
+![ReactComponentLifeCycle](./../images/ReactComponentLifecyle.png)
 
 - [React Component Lifecycle Docs](https://reactjs.org/docs/react-component.html)
 
