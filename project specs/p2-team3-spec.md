@@ -41,18 +41,20 @@ Your team will need to work with the trainer to come up with a satisfactory list
 ### User Stories
 * As a user, I can register an account.
 * As a user, I can login to my account.
-* As a user, I can add a game to my backlog.
 * As a user, I can rate a game in my backlog.
 * As a user, I can review a game in my backlog.
 * As a user, I can view my backlog.
 * As a user, I can add another user as a friend.
-* As a user, I can view a friend's backlog.
-* As an administrator, I an modify a user's backlog.
-* As an administrator, I can view all user backlogs.
+* As a user, I can view other users' backlogs.
+
 
 ### Bonus Stories
 * As a user, I can search for games.
 * As an administrator, I can modify available games from the master list.
+* As an administrator, I an modify a user's backlog.
+* As an administrator, I can view all user backlogs.
+
+
 
 ## Tech Stack
 You should be employing the following technologies in your project.
