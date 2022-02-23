@@ -43,17 +43,16 @@ Your team will need to work with the trainer to come up with a satisfactory list
  - As a guest, I can view exchange rate between two locations
  - As a guest, I can view weather at a given travel location
  - As a user, I can register and login to an account
+ - As a user, I can use more feature-rich versions of guest features
  - As a user, I can delete my account
  - As a user, I can save an itinerary
+
+## Bonus stories:
+ - As a user, I can get alerts about situations in areas I would travel to, like disease outbreaks
+ - As a user, I can see recommendations about restaurants and other businesses in the area
  - As an admin, I can access any user account
  - As an admin, I can reset a user account password
  - As an admin, I can delete a user account
-
-
-## Bonus stories:
-As a user, I can get alerts about situations in areas I would travel to, like disease outbreaks
-As a user, I can see recommendations about restaurants and other businesses in the area
-
 
 ## Tech Stack
 You should be employing the following technologies in your project.
