@@ -87,6 +87,7 @@
  - [Lifting State](./react/state-lifting.md)
  - [Hooks](./react/react-hooks.md)
  - [High Order Components](./react/high-order-components.md)
+ - [Containment & Specialization](./react_crach_course/react-containment-specialization.md)
  - [Redux](./react/redux.md)
 
 
@@ -165,4 +166,5 @@
 
 ## Design Patterns
  - [Design Patterns](./misc/design-patterns.md)
+ - [Flux Design Pattern](./react_crach_course/react-flux.md)
  - [Front Controller Design Pattern](./web%20services/front-controller.md)
