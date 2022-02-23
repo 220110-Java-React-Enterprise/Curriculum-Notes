@@ -63,7 +63,8 @@
    - .insertBefore();
    - .innerHTML();
  - What are event listeners? What are some events we can listen for? What are some different ways of setting event listeners? 
-   - Callback functions that wait for events to propigate though the DOM and act when such an event is detected.
+   - Event listeners are objects that registered to a DOM node that listen for a specific event to propigate through that node, and have a callback function.
+   - Event Handlers are the callback functions that take action when an event is detected.
    - onClick, onSubmit, mouseOver, onHover, onFocus, onKeyDown, onKeyUp, keyPressed, etc.
  - What is bubbling and capturing and what is the difference? 
    - bubbling: events propigating upward through the DOM from child to parent all the way to document.
