@@ -24,7 +24,7 @@ For more on React events see React's ["handling events" docs](https://reactjs.or
 
 ## Passing Event Handlers as Props
 
-Generally you cannot modify state in a parent component, but by passing an event handler into a child component, the handler method has access to the parent's state. This behavior is similar to that of a closure. More on this in the [Handling State](../03-handling-state) section.
+Generally you cannot modify state in a parent component, but by passing an event handler into a child component, the handler method has access to the parent's state. This behavior is similar to that of a closure. More on this in the [Handling State](./props-state.md) section.
 
 ## Synthetic Events
 
