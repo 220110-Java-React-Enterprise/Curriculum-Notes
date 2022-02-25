@@ -16,3 +16,13 @@ const GroceryList = () => {
   );
 };
 ```
+These notes need to be expanded and the example needs to sctually show the keys... [see here](https://reactjs.org/docs/lists-and-keys.html)
+
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =>
+  <li key={number.toString()}>
+    {number}
+  </li>
+);
+```
