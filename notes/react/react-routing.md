@@ -22,7 +22,6 @@ function App() {
   return (
     <div>
       <Router>
-        <Header></Header>
         <Switch>
           <Route path="/" exact></Route>
           <Route path="/directory" exact>
@@ -46,6 +45,31 @@ When using a `Route`, the corresponding component can be provided using nested c
 In the example above, `Switch` is used to assure that a single route is rendered exclusively. Without it, a request to "/new" would render both the NewItem component and the NotFound component. Other issues arise without using a `Switch` when using parameterized routes and they are satisfied by static routes.
 
 Once the Router is set up, we are able to link to these different URL's. The Link tag can then be used to refer to the URL. You may have `<Link to="/new">New</Link>` or `<Link to="/">Home</Link>` in your `Header` component.
+
+
+
+## React-router-dom V6
+The new version 6 of react-router-dom has more features and slightly different syntax. Instead of `<Switch>` we use `<Routes>` and instead of nesting the component to display inside `<Route>` tags, the component is included in the `<Route>` tag as an attribute called `element`.
+
+```javascript
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+function App() {
+  return (
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" exact />
+          <Route path="/directory" exact element={<ItemDirectory />} />
+          <Route path="/new" exact element={<NewItem />} />
+          <Route element={<NotFound />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+```
 
 # Additional Resources
 
