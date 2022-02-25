@@ -11,9 +11,9 @@ function NavBar(props) {
             <Link to="/class">Class Component!</Link> |
             <Link to="/function">Functional Component!</Link>
 
-            <Router>
+            <BrowserRouter>
 
-                <Switch>
+                <Routes>
                     <Route path="/class" exact>
                         <ClassComponent />
                     </Route>
@@ -21,8 +21,8 @@ function NavBar(props) {
                     <Route path="/function" exact>
                         <FunctionComponent />
                     </Route>
-                </Switch>
-            </Router>
+                </Routes>
+            </BrowserRouter>
 
             <ButtonComponent />
         </>

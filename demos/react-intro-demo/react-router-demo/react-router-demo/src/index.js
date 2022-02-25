@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import ParentComponent from './components/ParentComponent';
-
-
+import NavBar from './components/NavBar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ParentComponent />
+    <NavBar />
   </React.StrictMode>,
   document.getElementById('root')
 );
