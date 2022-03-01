@@ -11,7 +11,7 @@ Time complexity is usually the more important concern. Nowadays memory is cheap 
 ## Asymptotic Notation - Big-O, Big-Theta, Big-Omega
 Our goal is to classify complexity. We can't know it exactly, we can only estimate, but this isn't just a guess. When we analyze complexity we use mathematical concepts to not just guess, but prove, the classifications. These classifications have boundaries, and we prove that we are below some boundary (Big-O), above some boundary (Big-Omega), or within some tightly bounded range (Big-Theta). For programmers the most important of these is Big-O, or the worst-case scenario.  
 
-The formal definition of Big-O: f(n) = O(g(n)) => there are positive constants c and k, such that 0 ≤ f(n) ≤ cg(n) for all n ≥ k.
+ - The formal definition of Big-O: f(n) = O(g(n)) => there are positive constants c and k, such that 0 ≤ f(n) ≤ cg(n) for all n ≥ k.
 
 What does this mean? This means that as n grows (n is the variable that represents the size of the input) two functions grow in complexity, f and g. Funciton f is the one we are measuring. Function g is some function who's complexity we are guaranteeing will be greater than or equal to f. We're saying that there is some other function, g, that we prove is always going to take longer or take up more space than funciton f. Variable c is an arbitrary factor that you can multiply by the output of fuinciton f to get the cooresponding output of function g. Variable k is some arbitrary minimum size for n, where after that point the predicate above holds true. 
 
@@ -19,10 +19,10 @@ So, saying some algorithm is O(n^2) "...is Oh of n squared" means that n squared
 Function f is O(n^2)  =  "Function f is oh of n squared."  
 
 We can similarly find the lower bound, the best-case scenario. This is written with Big-Omega, or Big-Ω. 
-Formal definition of Big-Ω: f(n) = Ω(g(n)) => there are positive constants c and k, such that 0 ≤ cg(n) ≤ f(n) for all n ≥ k.  
+ - Formal definition of Big-Ω: f(n) = Ω(g(n)) => there are positive constants c and k, such that 0 ≤ cg(n) ≤ f(n) for all n ≥ k.  
 
 And we can find tight bounds. This is a stronger measurement with more exact boundaries, written in Big-Theta, or Big-Θ notation.
-Formal definition of Big-Θ: f(n) = Θ (g(n)) => there are positive constants c1, c2, and k, such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ k.  
+ - Formal definition of Big-Θ: f(n) = Θ (g(n)) => there are positive constants c1, c2, and k, such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ k.  
 
 Think of these concepts like a ceiling and a floor. If you jump, no matter how high you are able to jump you can't go higher than the ceiling. When you come back down you can't go lower than the floor. We are guaranteeing that no matter how long it takes function f to run, it will be no worse than function g.  
 
