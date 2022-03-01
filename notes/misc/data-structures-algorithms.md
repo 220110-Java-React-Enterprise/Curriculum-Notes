@@ -24,7 +24,7 @@ We can similarly find the lower bound, the best-case scenario. This is written w
 And we can find tight bounds. This is a stronger measurement with more exact boundaries, written in Big-Theta, or Big-Θ notation.
  - Formal definition of Big-Θ: f(n) = Θ (g(n)) => there are positive constants c1, c2, and k, such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ k.  
 
-Think of these concepts like a ceiling and a floor. If you jump, no matter how high you are able to jump you can't go higher than the ceiling. When you come back down you can't go lower than the floor. We are guaranteeing that no matter how long it takes function f to run, it will be no worse than function g.  
+Think of these concepts like a ceiling and a floor. If you jump, no matter how high you are able to jump you can't go higher than the ceiling. When you come back down you can't go lower than the floor. Big-O guarantees that no matter how long it takes function f to run, it will be no worse than function g.  
 
 ## Classifying Complexity
 Some common complexities found when analyzing algorithms include from best (least) to worst (greatest) complexity:
