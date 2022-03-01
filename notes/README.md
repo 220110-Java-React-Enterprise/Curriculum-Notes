@@ -162,6 +162,7 @@
  - [Jackson Library](./misc/jackson.md)
  - [JSON](./misc/intro-to-json.md)
  - [Axios](./misc/axios.md)
+ - [Data Structures & Algorithms](./misc/data-structures-algorithms.md)
 
 
 ## Design Patterns
