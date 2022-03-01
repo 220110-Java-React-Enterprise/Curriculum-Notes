@@ -9,11 +9,11 @@ When we analyze algorithms we want to estimate "complexity", that is how much ti
 Time complexity is usually the more important concern. Nowadays memory is cheap and ample, and we are less concerned with space complexity. There is also often a direct trade-off between time and space, where more space generally means less time and vice-versa.
 
 ## Asymptotic Notation - Big-O, Big-Theta, Big-Omega
-Our goal is to classify complexity. We can't know it exactly, we can only estimate, but this isn't just a guess. When we analyze complexity we use mathematical concepts to not just guess, but know, the classifications. These classifications have boundaries, and we prove that we are below some boundary (Big-O), above some boundary (Big-Omega), or within some tightly bounded range (Big-Theta). For programmers the most important of these is Big-O, or the worst-case scenario.  
+Our goal is to classify complexity. We can't know it exactly, we can only estimate, but this isn't just a guess. When we analyze complexity we use mathematical concepts to not just guess, but prove, the classifications. These classifications have boundaries, and we prove that we are below some boundary (Big-O), above some boundary (Big-Omega), or within some tightly bounded range (Big-Theta). For programmers the most important of these is Big-O, or the worst-case scenario.  
 
 The formal definition of Big-O: f(n) = O(g(n)) => there are positive constants c and k, such that 0 ≤ f(n) ≤ cg(n) for all n ≥ k.
 
-What does this mean? This means that as n grows (n is the variable that represents the size of the input) two functions grow in complexity, f and g. Funciton f is the one we are measuring. Function g is some function who's complexity we are guaranteeing will be larger than f. We're saying that there is some other function, g, that is our worst-case scenario. Function f will always take the same amount of space or time to complete as function g. Variable c is an arbitrary factor that you can multiply by function f to get function g. Variable k is some arbitrary minimum size for n.  
+What does this mean? This means that as n grows (n is the variable that represents the size of the input) two functions grow in complexity, f and g. Funciton f is the one we are measuring. Function g is some function who's complexity we are guaranteeing will be greater than or equal to f. We're saying that there is some other function, g, that we prove is always going to take longer or take up more space than funciton f. Variable c is an arbitrary factor that you can multiply by the output of fuinciton f to get the cooresponding output of function g. Variable k is some arbitrary minimum size for n, where after that point the predicate above holds true. 
 
 So, saying some algorithm is O(n^2) "...is Oh of n squared" means that n squared is the upper bound. This is what "Big-O" notation says, that some function is the upper bound of our function.  
 Function f is O(n^2)  =  "Function f is oh of n squared."  
@@ -23,6 +23,8 @@ Formal definition of Big-Ω: f(n) = Ω(g(n)) => there are positive constants c a
 
 And we can find tight bounds. This is a stronger measurement with more exact boundaries, written in Big-Theta, or Big-Θ notation.
 Formal definition of Big-Θ: f(n) = Θ (g(n)) => there are positive constants c1, c2, and k, such that 0 ≤ c1g(n) ≤ f(n) ≤ c2g(n) for all n ≥ k.  
+
+Think of these concepts like a ceiling and a floor. If you jump, no matter how high you are able to jump you can't go higher than the ceiling. When you come back down you can't go lower than the floor. We are guaranteeing that no matter how long it takes function f to run, it will be no worse than function g.  
 
 ## Classifying Complexity
 Some common complexities found when analyzing algorithms include from best (least) to worst (greatest) complexity:
