@@ -49,11 +49,11 @@ Finally we are ready to look at some code and try to determine it's complexity. 
 
 ```java
 //function f
-for (int i = 0; i < n; i++) {		// 1
-	int x = i;						// 2
-	for(int j = 0; j < n; j++) {	// 3
-		System.out.println(x + j)	// 4
-		x++;						// 5
+for (int i = 0; i < n; i++) {                   // 1
+	int x = i;                              // 2
+	for(int j = 0; j < n; j++) {            // 3
+		System.out.println(x + j)       // 4
+		x++;                            // 5
 	}
 }
 ```
