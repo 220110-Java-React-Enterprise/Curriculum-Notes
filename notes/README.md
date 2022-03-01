@@ -1,9 +1,6 @@
 # Notes
 ### Newest Topics:
- - JavaScript
- - TypeScript
- - React
- - Axios
+ - DS&A
 
 
 ## Java
