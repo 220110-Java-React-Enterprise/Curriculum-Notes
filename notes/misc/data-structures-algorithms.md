@@ -59,14 +59,18 @@ for (int i = 0; i < n; i++) {                   // 1
 	}
 }
 ```
+1. We start at the top. We don't really need to count the loop, instead we will count how many times the things inside the loop occur.
+2. x=1; is a constant time operation and happens as many times as the loop iterates, so it happens n times. 
+3. Another loop, again we are interested in what's inside it. Everything inside the inner loop will occur n times for each of the n iterations of the outer loop, or n squared times.
+4. Printing and summing are constant time operations.
+5. x++; is constant time.
 
-1. We start at the top. Right away there is a loop, which will loop exactly n times.
-2. On line 2 we have a constant time operation.
-3. We have a nested loop here, this loop will iterate n times during each iteration of the outer loop.
-4. On line 4 inside the inner loop we have a constant time operation, adding x + j and printing the result. This is O(1) or maybe O(2) but that constant value doesn't matter. Constant coefficients get dropped eventually anyway. We'll just consider it O(1) for now.
-5. Another constant operation on line 5. If we just consider lines 3-6 this is a loop that iterates n times and performs 3 constant time operations. We could consider this chunk of the code to be O(3n)
+So everything inside the outer loop occurs n (line 2) times, and everything inside the inner loop (lines 4 & 5) occurs n^2 times. This gives us a time complexity of: 
+ - O(n^2 + n^2 + n) - combine like terms
+ - O(2n^2 + n) - drop all but highest order term
+ - O(2n^2) - drop constant coefficients 
+ - O(n^2)
 
-So we have an inner loop that iterates n times and does 3 constant operations for O(3n), this inner loop completes during each iteration of the outer loop for O(n \* 3n), and finally line 2 is constant time and executes once in each iteration of the outer loop, or n times. This puts us at O(n \* 3n + n). Now we drop the lower terms, keeping only the largest one: O(3n^2). We also drop the constant coefficients for: O(n^2).  
 
 The time complexity of this function is O(n^2) "Oh of n squared". Because this function is so simple we actually also know the lower boundary: it's the same. The runtime of this function is dependent only on n, nothing else. So we have the upper bound Big-O, and we also know that is the same as the lower bound Big-Ω. Because we have these boundaries and because they are tightly bounded we also know Big-Θ. 
 
