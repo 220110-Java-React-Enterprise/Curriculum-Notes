@@ -78,6 +78,6 @@ So we can say that function f is O(n^2), and we can also say it is Ω(N^2), and 
 
 ## Analysis of Common Data Structures and Algorithms
 
-![](./../images/big-o-complexity.png)
-![](./../images/common-data-structures-complexity.png)
-![](./../images/sorting-complexity.png)
+![img](./../images/big-o-complexity.png)
+![img](./../images/common-data-structures-complexity.png)
+![img](./../images/sorting-complexity.png)
