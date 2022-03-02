@@ -77,6 +77,6 @@ The time complexity of this function is O(n^2) "Oh of n squared". Because this f
 So we can say that function f is O(n^2), and we can also say it is Ω(N^2), and Θ(n^2). Not all functions will be so simple. For instance, sorting algorithms often will perform better or worse not only based on the size of n, but how well sorted the input is. In those cases the upper and lower boundaries will be different, and the algorithm will fall somewhere in between.
 
 ## Analysis of Common Data Structures and Algorithms
-<img src="./../images/big-o-complexity.png" style="text-align:center;">
-<img src="./../images/common-data-structures-complexity.png" style="text-align:center;">
-<img src="./../images/sorting-complexity.png" style="text-align:center;">
+<img src="./../images/big-o-complexity.png" style="text-align: center;">
+<img src="./../images/common-data-structures-complexity.png" style="text-align: center;">
+<img src="./../images/sorting-complexity.png" style="text-align: center;">
