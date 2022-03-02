@@ -65,7 +65,7 @@ for (int i = 0; i < n; i++) {                   // 1
 4. Printing and summing are constant time operations.
 5. x++; is constant time.
 
-So everything inside the outer loop occurs n (line 2) times, and everything inside the inner loop (lines 4 & 5) occurs n^2 times. This gives us a time complexity of: 
+So everything inside the outer loop (line 2) occurs n times, and everything inside the inner loop (lines 4 & 5) occurs n^2 times. This gives us a time complexity of: 
  - O(n^2 + n^2 + n) - combine like terms
  - O(2n^2 + n) - drop all but highest order term
  - O(2n^2) - drop constant coefficients 
