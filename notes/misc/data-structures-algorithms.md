@@ -30,6 +30,7 @@ Think of these concepts like a ceiling and a floor. If you jump, no matter how h
 Some common complexities found when analyzing algorithms include from best (least) to worst (greatest) complexity:
  - O(1) - Constant complexity
  - O(log(n)) - Logarithmic complexity
+ - O(n) - Linear complexity
  - O(n^2) - Quadratic complexity
  - O(2^n) - Exponential complexity
  - O(n!) - Factorial complexity
