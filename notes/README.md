@@ -160,6 +160,7 @@
  - [JSON](./misc/intro-to-json.md)
  - [Axios](./misc/axios.md)
  - [Data Structures & Algorithms](./misc/data-structures-algorithms.md)
+ - [Important Data Structures](./misc/data-structures.md)
 
 
 ## Design Patterns
