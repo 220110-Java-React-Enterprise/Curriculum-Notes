@@ -6,6 +6,9 @@ An array is probably the simpliest data structure. An array is a contiguous bloc
   
 Arrays in most languages have a defined size, and you cannot grow it. Instead you must create a new larger array and copy the old array into it, then you can add more elements. In some languages arrays are dynamically sized, but under the hood this copy operation is being done for you.
 
+## Vector
+A vector is a dynamically resizing array. When the array is filled and a new element gets added, the vector creates a new larger array and copies the old array into it before discarding the original. This may sound just like Java's ArrayList, and that's because a Java ArrayList is a vector. Confusingly, Java also has a collection called vector, which is simply a thread-safe ArrayList.
+
 ## Linked List
 Another simple data structure, a linked list is made up of nodes which reference the next node in the list. Unlike arrays, these nodes do not need to be contiguous. A doubly-linked list is one where the nodes have references to both the next and previous nodes. A linked list has a head, and a doubly-linked list has a head and a tail. These are the first and last nodes in the list.  
   
@@ -36,14 +39,30 @@ A hash function is an operation that transforms some value into a different valu
 When we transform one set into a smaller set, we will probably get something called collisions. In the example above both `5 % 9 = 5` and `14 % 9 = 5`. If both 5 and 14 would be stored in index 5, what do we do? There are two main ways to handle this, linking and open addressing. With linking, each "bucket" is a linked list, and adding a new element where one already exists just means appending it to the end of the list. In order to find an element, you can hash it to find an index, and search through that linked list for the individual matching element. Open addressing means that if a "bucket" is filled, you simply move onto another bucket. When you find an empty bucket, you add the element. If you were to search for that element and found the element at the hashed index did not match, you would follow the same steps to go looking for where that element ended up.
 
 
-
-
 ## Tree
+A tree is similar to a linked list in that it is made up of nodes which reference other nodes. Unlike a linked list, nodes can be linked to more than 1 other node (or 2 for a doubly linked list). Trees also have a hierarchy to the nodes where the links establish parent/child relationships. There are many types of tree, for excample Binary Search Tree, Red-Black Tree, and General Tree to name a few. There are many types of tree, and each will have some characteristics that make it idealy suited for a particular use.  
+  
+Every tree has a root, which is the parent most node. Nodes are connected to other nodes, and this is commonly visualized as simple shapes with lines connecting them. The shapes are "nodes" or "vertices" and the lines connecting them are "edges". Nodes that have no children are called "leaf nodes". The root node is the only node in a tree with no parent.
+
+#### General Tree
+Lacks many additional characteristics, and is the most simple tree.
+#### Binary Tree 
+A node can have 0, 1, or 2 children. 
+#### Binary Search Tree
+A type of binary tree that mantains a sorted order and categorizes child nodes as left and right. Every left child must have a value that is less than the parent node, and every right child must have a value that is greater than the parent. These rules make this structure extremely good at searching for an element.
+#### AVL Tree
+Named after it's creators Adelson, Velski & Landis, this binary tree mantains a balance where for any node it's two sub trees (formed by considering each child to be the root node of a subtree) cannot have a difference in depth greater than the "balance factor", which is 1. If for some reason the tree is in a state where it is unbalanced, operations called "rotations" must be preformed to re-balance it.
+#### Red-Black Tree
+This tree is self-balanced binary tree just like AVL, but each node is "painted" either red or black. This characteristic is used to help maintain the balance. Root and leaf nodes are all considered black, when a node is inserted it is considered red, and a red node may not have a red child. If these rules are violated the tree must re-balance using rotations or by re-painting. There is quite a bit to these operations and you should look up more in-depth material if you are interested.
 
 ## Heap
+A heap is a type of binary tree in which the parent nodes are compared to their children. This allows the values within the nodes to be arranged accordingly. Heaps can be represented as trees, but they can also be represented as binary arrays.  
+  
+There are two types of heaps. In a min heap, the parent’s key is less than or equal to the keys of its children. In a max heap, the parent’s key is greater than or equal to the keys of its children.  
+  
+Heaps are often used in algorithms to create priority queues, and to find the smallest or largest value in an array.  
 
 ## Graph
+Much like a tree, a graph is made up of "nodes" or "vertices" connected by "edges". Some graphs are directed, in that the edges only go one way, and some are undirected which means the edges are all bi-directional. Graphs don't have a hierarchy, the edges do not form parent/child relationships. Graphs are often used to represent networks like circuits or roads.
 
-## Set
 
-## Vector
