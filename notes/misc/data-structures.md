@@ -47,7 +47,7 @@ Every tree has a root, which is the parent most node. Nodes are connected to oth
 #### General Tree
 Lacks many additional characteristics, and is the most simple tree.
 #### Binary Tree 
-A node can have 0, 1, or 2 children. 
+A node can have 0, 1, or 2 children. Binary trees have a "left" and "right" child, though this has no specific ordering. See BST below. 
 #### Binary Search Tree
 A type of binary tree that mantains a sorted order and categorizes child nodes as left and right. Every left child must have a value that is less than the parent node, and every right child must have a value that is greater than the parent. These rules make this structure extremely good at searching for an element.
 #### AVL Tree
