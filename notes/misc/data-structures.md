@@ -4,7 +4,7 @@
 ## Array
 An array is probably the simpliest data structure. An array is a contiguous block of memory filled with elements. The width of each element is the same and any element can be found by giving an index. You get the element at some index by offsetting from the beginning of the array: `addressOfArray + index * width = location of element`  
   
-Arrays in most languages have a defined size, and you cannot grow it. Instead you must create a new larger array and copy the old array into it, then you can add more elements. In some languages arrays are dynamically sized, but under the hood this operation or some similar one is being done for you.
+Arrays in most languages have a defined size, and you cannot grow it. Instead you must create a new larger array and copy the old array into it, then you can add more elements. In some languages arrays are dynamically sized, but under the hood this copy operation or something similar is being done for you.
 
 ## Vector
 A vector is a dynamically resizing array. When the array is filled and a new element gets added, the vector creates a new larger array and copies the old array into it before discarding the original. This may sound just like Java's ArrayList, and that's because a Java ArrayList is a vector. Confusingly, Java also has a collection called vector, which is simply a thread-safe ArrayList.
