@@ -17,4 +17,6 @@
 
 Here's a link to the [Windows web-server tutorial](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)
 
-Here's a link to the [Linux web-server Tutorial](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
+Here's how to deploy an [apache server](https://blog.jineshkumar.com/how-to-host-your-static-website-using-apache2-on-a-linux-machine-deployed-on-azure)
+
+Here's how to deploy an [nginx server](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal)
